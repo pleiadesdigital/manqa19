@@ -1,0 +1,33 @@
+/* MEDIA QUERIES */
+
+/* SMALL */
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+/* MEDIUM */
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+/* LARGE */
+@define-mixin atLarge {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+/* CLEAR FIX */
+@define-mixin clearfix {
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}

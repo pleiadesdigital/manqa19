@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+figure {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F8F8F8;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $carbon;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.menu-toggle {
+  display: none;
+}

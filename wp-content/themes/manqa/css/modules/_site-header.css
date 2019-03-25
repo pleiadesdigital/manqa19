@@ -1,0 +1,217 @@
+.site-header {
+  position: absolute;
+  width: 100%;
+  padding: 0px;
+  z-index: 1000;
+  transition: background-color 0.3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba(#000, 0.85);
+
+    @mixin atMedium {
+      background-color: transparent;
+    }
+
+  }
+
+  @mixin atMedium {
+    position: relative;
+  }
+
+
+/* CONTAINER */
+  &__container {
+    display: block;
+    position: relative;
+    padding-right: 0.5rem;
+
+  }
+
+  /* SITE BRANDING */
+
+  &__site-branding {
+    display: block;
+    padding: 0px;
+    line-height: 0px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+    @mixin atMedium {
+      padding: 3rem 1rem 2rem;
+    }
+
+    &--main-logo {
+      display: block;
+      width: 100px;
+      height: auto;
+
+      @mixin atSmall {
+        width: 140px;
+        height: auto;
+      }
+
+      @mixin atMedium {
+        width: 180px;
+        height: auto;
+        margin: 0px auto;
+      }
+
+      @mixin atLarge {
+        width: 180px;
+      }
+
+    }
+
+    .logo-img {
+      max-width: 110px;
+      height: auto;
+    }
+
+    .site-title {
+      position: relative;
+      z-index: 5;
+      height: 0px;
+      display: inline;
+      margin: 0px;
+      padding: 0px;
+      line-height: 0;
+      margin-left: -9999px;
+    }
+
+    .site-description {
+      position: relative;
+      z-index: 5;
+      height: 0px;
+      display: inline;
+      margin: 0px;
+      padding: 0px;
+      line-height: 0;
+      margin-left: -9999px;
+    }
+
+  }
+
+  /* MENU ICON */
+  &__menu-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    right: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 24px;
+      height: 2px;
+      background-color: #FFFFFF;
+      transform-origin: top left;
+      transition: transform 0.3s ease-out;
+    }
+
+    &__middle {
+      opacity: 1;
+      position: absolute;
+      top: 8px;
+      left: 0px;
+      width: 24px;
+      height: 2px;
+      background-color: #FFFFFF;
+      transform-origin: 0 50%;
+      transition: all 0.3s ease-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 0px;
+      width: 24px;
+      height: 2px;
+      background-color: #FFFFFF;
+      transition: transform 0.3s ease-out;
+      transform-origin: bottom left;
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+
+  }
+
+  &__menu-icon--close-x {
+
+    &::before {
+      transform: rotate(45deg) scaleX(1.2);
+      background-color: #FFFFFF;
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.2) translateY(2px) translateX(-2px);
+      background-color: #FFFFFF;
+    }
+
+  }
+
+  /* NAVIGATION */
+  &__main-navigation {
+
+    @mixin atMedium {
+      display: block;
+    }
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+
+      @mixin atMedium {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+    }
+
+    /* SMALL MENU (--is-visible) */
+    &--is-visible {
+      width: 70%;
+      margin: 0px auto;
+
+      @mixin atMedium {
+        width: 100%;
+        margin: 0px;
+        border: none;
+      }
+
+      ul {
+        margin: 0px;
+        z-index: 20;
+
+      }
+
+    } /* SMALL MENU (--is-visible) */
+
+  } /* &__main-navigation */
+
+
+  /* CALL TO ACTION */
+  &__cta {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+
+  }
+
+}

@@ -1,0 +1,89 @@
+.btn {
+  display: inline-block;
+  background-color: $color-dark;
+  color: #F8F8F8;
+  padding: 1.3rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  &--light:link,
+  &--light:visited {
+    color: $color-grey-dark;
+    background-color: $midsilver;
+    transition: all 0.2s ease-out;
+  }
+
+  &--light:hover,
+  &--light:focus {
+    color: #F8F8F8;
+    background-color: $color-grey-dark;
+  }
+
+  &--blue:link
+  &--blue:visited {
+    background: $color-blue-dark;
+    color: #F8F8F8;
+  }
+
+  &--gradient-green:link,
+  &--gradient-green:visited {
+    background-image: linear-gradient(to right, $color-orange-bright, $color-orange-light);
+    color: #F8F8F8;
+    transition: all 1s;
+  }
+
+  &--gradient-green:hover,
+  &--gradient-green:focus {
+    background-image: linear-gradient(to left, $color-orange-bright, $color-orange-light);
+  }
+
+  &--gradient-carbon:link,
+  &--gradient-carbon:visited {
+    background-image: linear-gradient(to right, $color-dark, $color-grey-dark-1);
+    color: #F8F8F8;
+    transition: all 1s;
+  }
+
+  &--gradient-carbon:hover,
+  &--gradient-carbon:focus {
+    background-image: linear-gradient(to left, $color-dark, $color-grey-dark-1);
+  }
+
+  &--transparent:link,
+  &--transparent:visited {
+    background: linear-gradient(rgba(#FFF, .3), rgba(#FFF, .2));
+    color: #F8F8F8;
+  }
+
+
+  &--c-white:link,
+  &--c-white:visited {
+    color: #F8F8F8;
+  }
+
+  &--large {
+    padding: 1.5rem 2.7rem;
+    min-width: 180px;
+
+    @mixin atSmall {
+      font-size: 1.8rem;
+    }
+
+  }
+
+  &--small {
+    padding: 1rem 2rem;
+    min-width: 130px;
+    font-size: 1.8rem;
+
+    @mixin atSmall {
+      font-size: 1.4rem;
+    }
+
+  }
+
+}

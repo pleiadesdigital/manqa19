@@ -1,0 +1,54 @@
+/* COLORS */
+
+$color-blue-darker: #010316;
+$color-blue-dark: #001D44;
+$color-red-light: #B04241;
+$color-purple-normal: #412549;
+$color-darkslate-blue: #483D8B;
+$color-slate-blue: #6A5ACD;
+
+/* MANQA */
+$color-orange: rgb(229, 74, 36);
+$color-pink: rgb(212, 48, 135);
+$color-green: rgb(115, 178, 31);
+$color-purple: rgb(150, 87, 153);
+$color-blue: rgb(0, 54, 122);
+$color-sea-blue: rgb(17, 72, 108);
+$color-dark-blue: rgb(32, 55, 87);
+
+/* Black to White */
+$black: #000000;
+$carbon: rgb(51, 51, 51);
+$darkgrey: rgb(77, 77, 77);
+$midgrey: rgb(102, 102, 102);
+$lightgrey: rgb(128, 128, 128);
+$grey: rgb(153, 153, 153);
+$darksilver: rgb(179, 179, 179);
+$midsilver: rgb(204, 204, 204);
+$lightsilver: rgb(230, 230, 230);
+$snow: rgb(242, 242, 242);
+$white: #FFFFFF;
+
+
+/* ENRED COLORS */
+$color-orange-light: rgb(255, 148, 6);
+$color-orange-bright: rgb(255, 73, 6);
+$color-grey-light: rgb(127, 127, 127);
+$color-grey-dark: rgb(43, 42, 42);
+$color-dark: rgb(15, 13, 11);
+$color-dark-orange: rgb(34, 9, 0);
+
+$color-grey-light-1:   #FAF9F9;
+$color-grey-light-2:   #F4F2F2;
+$color-grey-light-3:   #F0EEEE;
+$color-grey-light-4:   #CCCCCC;
+
+$color-grey-dark-1:    #333333;
+$color-grey-dark-2:    #777777;
+$color-grey-dark-3:    #999999;
+
+  /* SHADOWS */
+$shadow-dark: 0px 2rem 6rem rgba(0, 0, 0, 0.4);
+$shadow-medium: 0px 0.25rem 2rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0px 2rem 5rem rgba(0, 0, 0, 0.06);
+$border-bottom-1: 1px solid var(--color-grey-light-2);

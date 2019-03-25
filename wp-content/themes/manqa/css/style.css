@@ -1,0 +1,24 @@
+/*
+  Theme Name: MANQA Theme
+  Author: Ronaldo Ortiz
+  Version: 1.0
+*/
+
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_utilities";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_grid";
+@import "modules/_generic-content-container";
+@import "modules/_section-title";
+@import "modules/_site-header";
+@import "modules/_navigation";
+@import "modules/_large-hero";
+@import "modules/_projects";
+@import "modules/_site-footer";
+

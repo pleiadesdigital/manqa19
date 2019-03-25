@@ -1,0 +1,70 @@
+/* GRID 1 - Front page intro: photo & text */
+.fp-intro {
+  max-width: 960px;
+  margin: 0px auto;
+  display: block;
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+}
+
+@mixin atSmall {
+  .fp-intro {
+    padding: 0px 2em 2em;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
+    grid-template-columns: repeat(8, 1fr);
+
+    &__img {
+      grid-column: 1 / 5;
+      width: 100%;
+    }
+    &__text {
+      grid-column: 5 / -1;
+    }
+    grid-gap: 30px;
+  }
+}
+@mixin atMedium {
+  .fp-intro {
+    padding: 0px 2em 2em;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
+    grid-template-columns: repeat(8, 1fr);
+
+    &__img {
+      grid-column: 1 / 4;
+      width: 100%;
+    }
+    &__text {
+      grid-column: 4 / -1;
+    }
+    grid-gap: 30px;
+  }
+}
+
+
+
+
+
+
+
+/* GRID 2 */
+
+
+/* GRID 3 */
+
+
+/* GRID 4 */
+
+

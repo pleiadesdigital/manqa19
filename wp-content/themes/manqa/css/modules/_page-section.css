@@ -1,0 +1,29 @@
+.page-section {
+  padding: 3rem 0px;
+  /* margin-top: 3rem; */
+
+  @mixin atSmall {
+    padding: 5.5rem 0px;
+  }
+
+  &--blueslate {
+    background-color: $color-darkslate-blue;
+    color: #FFFFFF;
+  }
+
+  &--darkgrey {
+    background-color: $color-grey-dark;
+    color: #FFFFFF;
+  }
+
+  &--darkorange {
+    background-color: $color-dark-orange;
+    color: #FFFFFF;
+  }
+
+  &--midsilver {
+    background-color: $lightsilver;
+    color: $carbon;
+  }
+
+}

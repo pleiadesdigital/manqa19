@@ -1,0 +1,45 @@
+.large-hero {
+  position: relative;
+  line-height: 0;
+
+  &__image {
+    display: block;
+    filter: brightness(70%);
+
+    @mixin atMedium {
+      filter: brightness(100%);
+    }
+
+  }
+
+  &__bottom-line {
+
+    width: 100%;
+    height: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    &--col1 { background-color: $color-orange; }
+    &--col2 { background-color: $color-pink; }
+    &--col3 { background-color: $color-green; }
+    &--col4 { background-color: $color-purple; }
+    &--col5 { background-color: $color-blue; }
+
+    @mixin atSmall {
+      height: 6px;
+    }
+    @mixin atMedium {
+      height: 7px;
+    }
+    @mixin atMedium {
+      height: 8px;
+    }
+
+  }
+
+
+
+
+
+
+}
