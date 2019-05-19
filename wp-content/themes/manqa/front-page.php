@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
+<!-- LARGE HERO -->
 <div class="large-hero">
-
     <picture class="large-hero__image">
         <source srcset="<?php echo get_theme_file_uri('images/fp-hero/hero--large.jpg'); ?> 1920w, <?php echo get_theme_file_uri('images/fp-hero/hero--large-hi-dpi.jpg'); ?> 3840w" media="(min-width: 1380px)">
         <source srcset="<?php echo get_theme_file_uri('images/fp-hero/hero--medium.jpg'); ?> 1380w, <?php echo get_theme_file_uri('images/fp-hero/hero--medium-hi-dpi.jpg'); ?> 2760w" media="(min-width: 990px)">
@@ -20,10 +20,9 @@
 
 
 <!-- PROJECTS -->
-
 <div id="projects" class="projects page-section page-section--midsilver">
     <div class="wrapper">
-        <div class="section-title">
+        <div class="projects__title-text">
             <p>Manq ́a quiere decir “comida” en lengua aymara. Es un modelo de formación gastronómica orientado a la generación de mejores oportunidades de vida para jóvenes de escasos recursos en Bolivia y víctimas del conflicto armado en Colombia.</p>
         </div>
 
@@ -67,12 +66,93 @@
 
         </div>
 
+        <div class="projects__title-text m-top-larger">
+            <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
+        </div>
+
     </div> <!-- wrapper -->
 </div> <!-- class="projects -->
 
 
+<!-- IMG SECTION -->
+<div id="imgsec" class="imgsec">
+    <div class="imgsec__backimg" style="background-image: url(<?php echo get_theme_file_uri('images/fp-hero/manqa-campesino2.jpg'); ?>)"></div>
+    <!-- LINEA ADORNO DE COLORES     -->
+    <div class="large-hero__bottom-line">
+        <span class="large-hero__bottom-line--col1"></span>
+        <span class="large-hero__bottom-line--col2"></span>
+        <span class="large-hero__bottom-line--col3"></span>
+        <span class="large-hero__bottom-line--col4"></span>
+        <span class="large-hero__bottom-line--col5"></span>
+    </div>
+</div>
+
+<!-- STATS -->
+<div id="stats" class="stats page-section">
+    <div class="wrapper">
+        <!-- MAIN PROJECTS -->
+        <div class="stats__cards generic-content-container">
+            <div class="stats__card stats__card--1">
+                <h2>3155</h2>
+                <p>JÓVENES GRADUADOS</p>
+            </div>
+            <div class="stats__card stats__card--2">
+                <h2>3155</h2>
+                <p>JÓVENES GRADUADOS</p>
+            </div>
+            <div class="stats__card stats__card--3">
+                <h2>3155</h2>
+                <p>JÓVENES GRADUADOS</p>
+            </div>
+            <div class="stats__card stats__card--4">
+                <h2>3155</h2>
+                <p>JÓVENES GRADUADOS</p>
+            </div>
+            <div class="stats__card stats__card--5">
+                <h2>3155</h2>
+                <p>JÓVENES GRADUADOS</p>
+            </div>
+        </div>
+    </div> <!-- wrapper -->
+</div> <!-- class="projects -->
+
+<!-- NOTICIAS -->
+<div id="noticias" class="noticias page-section">
+  <div class="wrapper wrapper--medium">
+
+    <div class="noticias__item">
+      <figure class="noticias__item--figure">
+        <img src="<?php echo get_theme_file_uri("images/fpblog/fpblog-img1"); ?>" alt="noticias">
+      </figure>
+      <div class="noticias__item--text">
+        <h2>ESCUELAS ABREN</h2>
+        <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
+      </div>
+    </div>
+
+    <div class="noticias__item">
+      <figure class="noticias__item--figure">
+        <img src="<?php echo get_theme_file_uri("images/fpblog/fpblog-img1"); ?>" alt="noticias">
+      </figure>
+      <div class="noticias__item--text">
+        <h2>ESCUELAS ABREN</h2>
+        <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
+      </div>
+    </div>
+    <div class="noticias__item">
+      <figure class="noticias__item--figure">
+        <img src="<?php echo get_theme_file_uri("images/fpblog/fpblog-img1"); ?>" alt="noticias">
+      </figure>
+      <div class="noticias__item--text">
+        <h2>ESCUELAS ABREN</h2>
+        <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
+      </div>
+    </div>
+
+
+  </div>
+</div><!-- class="noticias -->
 
 
 
-
-<?php get_footer(); ?>
+<?php get_footer(); ?>5

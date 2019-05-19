@@ -12,6 +12,7 @@
 @import "modules/_btn";
 @import "modules/_wrapper";
 @import "modules/_page-section";
+@import "modules/_imgsec";
 @import "modules/_headline";
 @import "modules/_grid";
 @import "modules/_generic-content-container";
@@ -20,5 +21,7 @@
 @import "modules/_navigation";
 @import "modules/_large-hero";
 @import "modules/_projects";
+@import "modules/_stats";
+@import "modules/_noticias";
 @import "modules/_site-footer";
 

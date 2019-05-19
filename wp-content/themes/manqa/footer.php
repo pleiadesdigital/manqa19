@@ -10,7 +10,7 @@
             <div class="site-footer__info--logo">
                 <a href="<?php site_url('bloginfo'); ?>">
                     <img class="logo-footer" src="<?php echo get_theme_file_uri('images/branding/logo-en-red-w.svg'); ?>" alt="Manqa - Cafeterías y Escuelas de Cocina">
-                    <p>Ingeniería Especializada</p>
+                    <p>Cafeterías y Escuelas de Cocina</p>
                 </a>
             </div>
 

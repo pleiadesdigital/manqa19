@@ -1,25 +1,51 @@
 .projects {
 
-  padding: 4rem 0px 8rem;
+  padding: 2rem 0px 2rem;
+  @mixin atMedium {
+     padding: 4rem 0px 4rem;
+  }
   background-color: $lightsilver;
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
     grid-gap: 20px;
+    justify-content: center;
+
+    @mixin atMedium {
+      grid-gap: 70px;
+    }
+
+  }
+
+  &__title-text {
+    display: block;
+    width: 85%;
+    margin: 2rem auto 2rem;
+    padding: 2rem 0px;
+    color: $color-sea-blue;
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    text-align: center;
   }
 
 }
 
 .projects__card {
-  border: 1px solid #FFFFFF;
-  border-radius: 10px;
-  padding: 1rem;
 
   /* IMAGES */
 
   figure {
      position: relative;
+
+     width: 100%;
+     height: auto;
+     margin: 0px auto;
+
+     img {
+       border-radius: 20px;
+     }
 
     .figcaption {
       position: absolute;
@@ -43,16 +69,19 @@
       &--1 {
         background-color: rgba(229, 74, 36, 0.7);
         filter: brightness(70%);
+        border-radius: 20px;
       }
 
       &--2 {
         background-color: rgba(150, 87, 153, 0.7);
         filter: brightness(70%);
+        border-radius: 20px;
       }
 
       &--3 {
         background-color: rgba(115, 178, 31, 0.7);
         filter: brightness(70%);
+        border-radius: 20px;
       }
 
       h2 {
@@ -103,8 +132,6 @@
     }
 
   }
-
-
 
 
 }

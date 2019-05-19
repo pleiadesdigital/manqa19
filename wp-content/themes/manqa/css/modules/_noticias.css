@@ -1,0 +1,55 @@
+.noticias {
+
+  &__item {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 6rem;
+    display: block;
+
+    @mixin atMedium {
+      width: 100%;
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: 35% 1fr;
+      grid-gap: 40px;
+    }
+
+
+    &--figure {
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    &--text {
+      padding-right: 2rem;
+
+      h2 {
+
+        @mixin atMedium {
+          font-size: 2rem;
+          margin-top: 0px;
+        }
+
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        @mixin atMedium {
+          font-size: 1.6rem;
+          line-height: 1.5;
+        }
+      }
+
+    }
+
+
+
+  } /* &__item */
+
+
+
+
+
+}

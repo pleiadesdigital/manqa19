@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./wp-content/themes/enred/js/App.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./wp-content/themes/manqa/js/App.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -97,27 +97,39 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 
 /***/ }),
 
-/***/ "./wp-content/themes/enred/js/App.js":
+/***/ "./wp-content/themes/manqa/js/App.js":
 /*!*******************************************!*\
-  !*** ./wp-content/themes/enred/js/App.js ***!
+  !*** ./wp-content/themes/manqa/js/App.js ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _MobileMenu = __webpack_require__(/*! ./modules/MobileMenu */ \"./wp-content/themes/enred/js/modules/MobileMenu.js\");\n\nvar _MobileMenu2 = _interopRequireDefault(_MobileMenu);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar mobileMenu = new _MobileMenu2.default();\n\n//# sourceURL=webpack:///./wp-content/themes/enred/js/App.js?");
+eval("\n\nvar _MobileMenu = __webpack_require__(/*! ./modules/MobileMenu */ \"./wp-content/themes/manqa/js/modules/MobileMenu.js\");\n\nvar _MobileMenu2 = _interopRequireDefault(_MobileMenu);\n\nvar _CustomScripts = __webpack_require__(/*! ./modules/CustomScripts */ \"./wp-content/themes/manqa/js/modules/CustomScripts.js\");\n\nvar _CustomScripts2 = _interopRequireDefault(_CustomScripts);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar mobileMenu = new _MobileMenu2.default();\nvar customScripts = new _CustomScripts2.default();\n\n//# sourceURL=webpack:///./wp-content/themes/manqa/js/App.js?");
 
 /***/ }),
 
-/***/ "./wp-content/themes/enred/js/modules/MobileMenu.js":
+/***/ "./wp-content/themes/manqa/js/modules/CustomScripts.js":
+/*!*************************************************************!*\
+  !*** ./wp-content/themes/manqa/js/modules/CustomScripts.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n// $(\".large-hero\").css(\"border\", \"2px solid slateblue\");\n// document.querySelector(\".large-hero\").style.border = \"2px solid tomato\";\n\nvar CustomScripts = function () {\n  function CustomScripts() {\n    _classCallCheck(this, CustomScripts);\n\n    this.mainHeader = (0, _jquery2.default)(\".site-header\");\n    this.events();\n  }\n\n  _createClass(CustomScripts, [{\n    key: \"events\",\n    value: function events() {\n      this.mainHeader.on(\"click\", this.doSomething.bind(this));\n    }\n  }, {\n    key: \"doSomething\",\n    value: function doSomething() {\n      console.log(\"Lets see if it works!\");\n    }\n  }]);\n\n  return CustomScripts;\n}();\n\nexports.default = CustomScripts;\n\n//# sourceURL=webpack:///./wp-content/themes/manqa/js/modules/CustomScripts.js?");
+
+/***/ }),
+
+/***/ "./wp-content/themes/manqa/js/modules/MobileMenu.js":
 /*!**********************************************************!*\
-  !*** ./wp-content/themes/enred/js/modules/MobileMenu.js ***!
+  !*** ./wp-content/themes/manqa/js/modules/MobileMenu.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar MobileMenu = function () {\n  function MobileMenu() {\n    _classCallCheck(this, MobileMenu);\n\n    this.siteHeader = (0, _jquery2.default)(\".site-header\");\n    this.menuIcon = (0, _jquery2.default)(\".site-header__menu-icon\");\n    this.menuContent = (0, _jquery2.default)(\".site-header__main-navigation\");\n    this.events();\n  }\n\n  _createClass(MobileMenu, [{\n    key: \"events\",\n    value: function events() {\n      this.menuIcon.click(this.toggleTheMenu.bind(this));\n    }\n  }, {\n    key: \"toggleTheMenu\",\n    value: function toggleTheMenu() {\n      this.menuContent.toggleClass(\"site-header__main-navigation--is-visible\");\n      this.siteHeader.toggleClass(\"site-header--is-expanded\");\n      this.menuIcon.toggleClass(\"site-header__menu-icon--close-x\");\n    }\n  }]);\n\n  return MobileMenu;\n}();\n\nexports.default = MobileMenu;\n\n//# sourceURL=webpack:///./wp-content/themes/enred/js/modules/MobileMenu.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar MobileMenu = function () {\n  function MobileMenu() {\n    _classCallCheck(this, MobileMenu);\n\n    this.siteHeader = (0, _jquery2.default)(\".site-header\");\n    this.menuIcon = (0, _jquery2.default)(\".site-header__menu-icon\");\n    this.menuContent = (0, _jquery2.default)(\".site-header__main-navigation\");\n    this.events();\n  }\n\n  _createClass(MobileMenu, [{\n    key: \"events\",\n    value: function events() {\n      this.menuIcon.click(this.toggleTheMenu.bind(this));\n    }\n  }, {\n    key: \"toggleTheMenu\",\n    value: function toggleTheMenu() {\n      this.menuContent.toggleClass(\"site-header__main-navigation--is-visible\");\n      this.siteHeader.toggleClass(\"site-header--is-expanded\");\n      this.menuIcon.toggleClass(\"site-header__menu-icon--close-x\");\n    }\n  }]);\n\n  return MobileMenu;\n}();\n\nexports.default = MobileMenu;\n\n//# sourceURL=webpack:///./wp-content/themes/manqa/js/modules/MobileMenu.js?");
 
 /***/ })
 

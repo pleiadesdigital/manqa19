@@ -1,0 +1,11 @@
+.imgsec {
+  display: block;
+
+  &__backimg {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    @mixin imgBack;
+  }
+
+}
