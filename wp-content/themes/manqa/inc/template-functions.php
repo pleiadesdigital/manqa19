@@ -1,37 +1,49 @@
-<?php
-/**
- * Functions which enhance the theme by hooking into WordPress
- *
- * @package Manqa
- */
+<?php /* Functions which enhance the theme by hooking into WordPress */
 
-/**
- * Adds custom classes to the array of body classes.
- *
- * @param array $classes Classes for the body element.
- * @return array
- */
-function manqa_body_classes( $classes ) {
+
+function manqa_body_classes($classes) {
 	// Adds a class of hfeed to non-singular pages.
-	if ( ! is_singular() ) {
+	if (!is_singular()) {
 		$classes[] = 'hfeed';
 	}
-
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if (!is_active_sidebar('sidebar-1')) {
 		$classes[] = 'no-sidebar';
 	}
-
 	return $classes;
 }
-add_filter( 'body_class', 'manqa_body_classes' );
+add_filter('body_class', 'manqa_body_classes');
 
-/**
- * Add a pingback url auto-discovery header for single posts, pages, or attachments.
- */
-function manqa_pingback_header() {
-	if ( is_singular() && pings_open() ) {
-		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+/* Page Banner function */
+function pageBanner($args = NULL) {
+	if (!$args['title']) {
+		$args['title'] = get_the_title();
 	}
-}
-add_action( 'wp_head', 'manqa_pingback_header' );
+	if (!$args['subtitle']) {
+		$args['subtitle'] = get_field('page_subtitle');
+	}
+	if (!$args['photo']) {
+		if (get_field('banner_image')) {
+			$args['photo'] = get_field('banner_image')['sizes']['pageBanner'];
+		} else {
+			$args['photo'] = get_theme_file_uri('/images/banners/banner-escuelas.jpg');
+		}
+	}
+?>
+	<div class="page-banner">
+		<div class="page-banner__bg-image" style="background-image: url(<?php
+			echo $args['photo'];
+		?>);"></div>
+
+		<div class="page-banner__content wrapper wrapper--medium">
+			<header class="entry-header">
+				<h1 class="page-banner__title"><?php echo $args['title']; ?></h1>
+				<div class="page-banner__intro">
+					<p><?php echo $args['subtitle']; ?></p>
+				</div>
+			</header>
+		</div>
+
+	</div><!-- class="page-banner" -->
+<?php }
+

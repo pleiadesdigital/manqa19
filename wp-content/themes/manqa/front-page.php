@@ -18,7 +18,6 @@
     </div>
 </div><!-- class="large-hero" -->
 
-
 <!-- PROJECTS -->
 <div id="projects" class="projects page-section page-section--midsilver">
     <div class="wrapper">
@@ -35,7 +34,7 @@
                     <figcaption class="figcaption figcaption--1">
                         <h2>Provident ut nulla</h2>
                         <p>Lorem ipsum dolor sit amet, consequat odio ipsum dolor aenean ac aliquam</p>
-                        <a href="#" class="btn btn--small btn--gradient-green">Leer más</a>
+                        <a href="#" class="btn btn--small btn--gradient-orange">Leer más</a>
                     </figcaption>
                 </figure>
 
@@ -47,7 +46,7 @@
                     <figcaption class="figcaption figcaption--2">
                         <h2>Magna neque sollicitudin</h2>
                         <p>Lorem ipsum dolor sit amet, consequat odio ipsum dolor aenean ac aliquam</p>
-                        <a href="#" class="btn btn--small btn--gradient-green">Leer más</a>
+                        <a href="#" class="btn btn--small btn--gradient-purple">Leer más</a>
                     </figcaption>
                 </figure>
             </div>
@@ -72,7 +71,6 @@
 
     </div> <!-- wrapper -->
 </div> <!-- class="projects -->
-
 
 <!-- IMG SECTION -->
 <div id="imgsec" class="imgsec">

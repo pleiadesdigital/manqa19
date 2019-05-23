@@ -1,0 +1,73 @@
+.page-banner {
+  background-color: $black;
+  padding: 120px 0px 20px 0px;
+  position: relative;
+
+  @mixin atSmall {
+    padding: 300px 0px 60px 0px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__bg-image {
+    opacity: 0.7;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 3.4rem;
+    margin: 0px 0px 1rem 0px;
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    @mixin atSmall {
+      font-size: 5rem;
+      text-align: left;
+    }
+  }
+
+  &__intro {
+    color: $color-grey-light-4;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    @mixin atSmall {
+      text-align: left;
+    }
+
+  }
+
+  /* SMALL BANNER */
+    &--small {
+      padding: 120px 10px 50px;
+      @mixin atSmall {
+        padding: 150px 10px 50px;
+      }
+      @mixin atMedium {
+        padding: 30px 10px;
+      }
+
+      .page-banner__title {
+        font-size: 3.2rem;
+        text-align: center;
+        font-weight: 300;
+        margin: 0px;
+        padding: 0px;
+
+      }
+
+    }
+
+
+}

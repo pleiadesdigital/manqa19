@@ -19,6 +19,9 @@ if (!function_exists('manqa_setup')) :
 			'gallery',
 			'caption',
 		));
+		// Image Sizes
+		add_image_size('pageBanner', 1500, 350, true);
+
 	} //enred_setup()
 endif;
 add_action('after_setup_theme', 'manqa_setup');
@@ -31,6 +34,8 @@ function enred_scripts() {
   wp_enqueue_script('manqa-bundle-scripts', get_template_directory_uri() . '/scripts/App.js', array(), '20151215', true);
 	// google fonts
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600');
+	// Fontawesome
+	wp_enqueue_script('manqa-fontawesome', 'https://use.fontawesome.com/b1403a6995.js', array(), '20170109', true);
 	/* Keyboard Accesibility */
 	wp_enqueue_script('manqa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
 }

@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: color($color-dark blackness(+5%));
+  background-color: $color-sea-blue;
   color: #FFFFFF;
   text-align: center;
   padding: 4rem 1rem;
@@ -7,104 +7,78 @@
   &__info {
     padding: 1rem;
     /* min-height: 300px; */
-
-    @mixin atMedium {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-      grid-gap: 40px;
-      align-items: start;
-    }
-
     &--logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      opacity: 0.8;
       padding: 2rem 0px;
-
       .logo-footer {
-        width: 50%;
-        margin: 0px;
+        height: 50px;
+        margin: 0px 0px 0.5rem;
       }
-
       p {
-        color: #F8F8F8;
+        color: #FFFFFF;
         margin: 0px;
       }
+    } /* &--logo */
 
-    }
-
-    &--servicios {
+    &--text {
       display: block;
-
       h3 {
         text-transform: uppercase;
         font-weight: 400;
         font-size: 1.8rem;
-        color: $color-grey-light;
+        color: #FFFFFF;
         line-height: 2;
-        border-bottom: 1px dotted $color-grey-light;
       }
-
       ul {
         list-style: none;
         margin: 0px;
         padding: 0px;
         margin-left: 1.5rem;
-        color: $color-grey-light;
       }
-
       li {
         text-align: left;
         margin-bottom: 1rem;
         list-style: square;
       }
-
       a {
         font-size: 1.3rem;
         color: $color-grey-light;
         font-weight: 200;
       }
-
-    }
-
-    &--redes {
-      display: block;
-
-      h3 {
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 1.8rem;
-        color: $color-grey-light;
-        line-height: 2;
-        border-bottom: 1px dotted $color-grey-light;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        margin-left: 1.5rem;
-        color: $color-grey-light;
-      }
-
-      li {
-        text-align: left;
-        margin-bottom: 1rem;
-        list-style: square;
-      }
-
-      a {
-        font-size: 1.3rem;
-        color: $color-grey-light;
-        font-weight: 200;
-      }
-
-    }
+    } /* &--text */
 
     &--contacto {
       display: block;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        line-height: 2;
+      }
+      ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 1.5rem;
+        color: $color-grey-light;
+      }
+      li {
+        text-align: left;
+        margin-bottom: 1rem;
+        list-style: square;
+      }
+      a {
+        font-size: 1.3rem;
+        color: $color-grey-light;
+        font-weight: 200;
+      }
+    } /* &--contacto */
 
+    &--redes {
+      display: block;
       h3 {
         text-transform: uppercase;
         font-weight: 400;
@@ -113,7 +87,6 @@
         line-height: 2;
         border-bottom: 1px dotted $color-grey-light;
       }
-
       ul {
         list-style: none;
         margin: 0px;
@@ -121,26 +94,24 @@
         margin-left: 1.5rem;
         color: $color-grey-light;
       }
-
       li {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
         list-style: square;
+        display: inline-block;
       }
-
       a {
         font-size: 1.3rem;
         color: $color-grey-light;
         font-weight: 200;
       }
+    } /* &--redes */
 
-    }
-
-  }
+  } /* &__info */
 
   &__credits {
     margin-top: 3rem;
-    color: $color-grey-light;
+    color: $snow;
   }
 
 

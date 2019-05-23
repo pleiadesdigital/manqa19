@@ -29,29 +29,56 @@
     color: #F8F8F8;
   }
 
+
+  /* BLUE */
+  &--gradient-blue:link,
+  &--gradient-blue:visited {
+    background-image: linear-gradient(to right, $color-dark-blue, color($color-dark-blue l(50%)));
+    color: #F8F8F8;
+    transition: all 1s;
+  }
+  &--gradient-blue:hover,
+  &--gradient-blue:focus {
+    background-image: linear-gradient(to left, $color-dark-blue, color($color-dark-blue l(50%)));
+  }
+
+  /* ORANGE */
+  &--gradient-orange:link,
+  &--gradient-orange:visited {
+    background-image: linear-gradient(to right, $color-orange, color($color-orange l(30%)));
+    color: #F8F8F8;
+    transition: all 1s;
+  }
+  &--gradient-orange:hover,
+  &--gradient-orange:focus {
+    background-image: linear-gradient(to left, $color-orange, color($color-orange l(30%)));
+  }
+
+  /* PURPLE */
+  &--gradient-purple:link,
+  &--gradient-purple:visited {
+    background-image: linear-gradient(to right, $color-purple, color($color-purple l(30%)));
+    color: #F8F8F8;
+    transition: all 1s;
+  }
+  &--gradient-purple:hover,
+  &--gradient-purple:focus {
+    background-image: linear-gradient(to left, $color-purple, color($color-purple l(30%)));
+  }
+
+  /* GREEN */
   &--gradient-green:link,
   &--gradient-green:visited {
-    background-image: linear-gradient(to right, $color-orange-bright, $color-orange-light);
+    background-image: linear-gradient(to right, $color-green, color($color-green l(20%)));
     color: #F8F8F8;
     transition: all 1s;
   }
-
   &--gradient-green:hover,
   &--gradient-green:focus {
-    background-image: linear-gradient(to left, $color-orange-bright, $color-orange-light);
+    background-image: linear-gradient(to left, $color-green, color($color-green l(20%)));
   }
 
-  &--gradient-carbon:link,
-  &--gradient-carbon:visited {
-    background-image: linear-gradient(to right, $color-dark, $color-grey-dark-1);
-    color: #F8F8F8;
-    transition: all 1s;
-  }
 
-  &--gradient-carbon:hover,
-  &--gradient-carbon:focus {
-    background-image: linear-gradient(to left, $color-dark, $color-grey-dark-1);
-  }
 
   &--transparent:link,
   &--transparent:visited {

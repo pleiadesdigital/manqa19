@@ -12,6 +12,7 @@
 @import "modules/_btn";
 @import "modules/_wrapper";
 @import "modules/_page-section";
+@import "modules/_page-banner";
 @import "modules/_imgsec";
 @import "modules/_headline";
 @import "modules/_grid";
@@ -19,8 +20,10 @@
 @import "modules/_section-title";
 @import "modules/_site-header";
 @import "modules/_navigation";
+@import "modules/_metabox";
 @import "modules/_large-hero";
 @import "modules/_projects";
+@import "modules/_escuelas";
 @import "modules/_stats";
 @import "modules/_noticias";
 @import "modules/_site-footer";

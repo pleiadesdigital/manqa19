@@ -1,5 +1,6 @@
 .page-section {
   padding: 3rem 0px;
+  position: relative;
   /* margin-top: 3rem; */
 
   @mixin atSmall {
