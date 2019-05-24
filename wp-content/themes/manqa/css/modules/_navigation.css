@@ -112,8 +112,17 @@
 
     /* SECOND LEVEL */
 
-    &__submenu {
-      border: 3px solid pink;
+    ul ul {
+      position: absolute;
+      min-width: 200px;
+      background: lightgrey;
+      display: block;
+      /* display: none; */
+    }
+
+    ul ul li {
+      display: block;
+      border: 1px solid slateblue;
     }
 
     .current-page {

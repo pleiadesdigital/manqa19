@@ -44,7 +44,7 @@
 						<ul>
 							<li <?php if (is_page("nosotros")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/nosotros'); ?>">Nosotros</a></li>
 							<li <?php if (is_page("escuelas")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/escuelas'); ?>">Escuelas</a>
-								<ul class="site-navigation__submenu">
+								<ul class="site-header__main-navigation--submenu">
 									<li <?php if (is_page("escuelas-bolivia")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/escuelas-bolivia'); ?>">Escuelas Bolivia</a>
 									<li <?php if (is_page("escuelas-colombia")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/escuelas-colombia'); ?>">Escuelas Colombia</a>
 								</ul>
