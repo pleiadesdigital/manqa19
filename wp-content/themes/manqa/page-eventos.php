@@ -1,11 +1,11 @@
-<?php /* The template for displaying all pages */ ?>
+<?php /* The template for displaying EVENTOS page */ ?>
 <?php get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 
 	<!-- PAGE BANNER -->
 	<?php pageBanner(array(
-		'photo'				=> get_theme_file_uri('images/banners/banner-default.jpg')
+		'photo'				=> get_theme_file_uri('images/banners/banner-eventos.jpg')
 	)); ?>
 
 	<div id="primary" class="content-area">
@@ -23,34 +23,6 @@
 					<p><a class="metabox__blog-home-link" href="<?php echo get_permalink($theParent); ?>"><i class="fa fa-home" aria-hidden="true"></i> Volver a <?php echo get_the_title($theParent); ?></a> <span class="metabox__main"><?php the_title(); ?></span></p>
 				</div>
 				<?php endif; ?>
-
-
-				<!-- PAGE LINKS -->
-				<?php
-					$testArray = get_pages(array(
-						'child_of'		=> get_the_id()
-					));
-				?>
-				<?php if ($theParent || $testArray || is_page('55')) : ?>
-					<div class="page-links">
-					<h2 class="page-links__title"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent); ?></a></h2>
-					<ul class="min-list">
-						<?php
-							if ($theParent) {
-								$findChildrenOf = $theParent;
-							} else {
-								$findChildrenOf = get_the_id();
-							}
-							wp_list_pages(array(
-								'title_li'			=> NULL,
-								'child_of'			=> $findChildrenOf,
-								'sort_column'		=> 'menu_order'
-							));
-						?>
-					</ul>
-				</div>
-				<?php endif; ?>
-
 
 
 				<!-- MAIN CONTENT -->

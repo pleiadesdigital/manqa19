@@ -1,0 +1,116 @@
+.nosotros {
+  padding: 2rem 0px 0px;
+
+  &__main-content {
+    display: block;
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 2rem 0px;
+
+    h2, h3, h4 {
+      margin: 0px;
+      padding: 0px;
+      margin-top: 3rem;
+      &:first-child {
+        margin-top: 0px;
+      }
+      margin-bottom: 1rem;
+    }
+
+    p, ul, ol {
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+  } /* &__main-content */
+
+  /* INFOGRAFÍA */
+  &__infografia {
+    display: block;
+    background-color: $color-map-background;
+    padding: 3rem 2rem 0px;;
+    img {
+      display: block;
+      margin: 0px auto;
+
+    }
+  }
+
+  /* ALIADOS */
+  &__aliados {
+
+
+
+    &--text {
+      max-width: 700px;
+      display: block;
+      margin: 0px auto 4rem;
+
+      h2 {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.4;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 2rem;
+      }
+      h4 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 3rem;
+        text-align: center;
+      }
+
+
+
+
+    }
+
+    &--ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+    }
+
+    &--li {
+
+      border: 1px solid rgb(241, 243, 227);
+      width: 45%;
+      @mixin atSmall {
+        width: 30%;
+      }
+      @mixin atMedium {
+        width: 23%;
+      }
+      background-color: #FFFFFF;
+      padding: 1rem;
+      margin-bottom: 2rem;
+
+    }
+
+    &--li-u {
+      width: 33%;
+    }
+
+
+
+  }
+
+
+
+} /* .nosotros */

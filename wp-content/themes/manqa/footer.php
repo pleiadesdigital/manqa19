@@ -26,9 +26,9 @@
 
             <div class="site-footer__info--redes">
                 <ul>
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>Messenger</a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
 

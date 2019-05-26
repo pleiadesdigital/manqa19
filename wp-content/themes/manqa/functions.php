@@ -20,7 +20,7 @@ if (!function_exists('manqa_setup')) :
 			'caption',
 		));
 		// Image Sizes
-		add_image_size('pageBanner', 1500, 350, true);
+		add_image_size('pageBanner', 2200, 1238, false);
 
 	} //enred_setup()
 endif;

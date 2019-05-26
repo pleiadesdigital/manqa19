@@ -3,171 +3,82 @@
 .site-header {
 
   &__main-navigation {
-    width: 90%;
-    opacity: 0;
-    padding: 0px 4rem 1.5rem;
-    margin: 0px auto;
-    position: relative;
-    z-index: -10;
-
-    @mixin atMedium {
-      width: 100%;
-      padding: 0px;
-      margin: 2rem 0px 3rem;
-      z-index: 10;
-      opacity: 1;
-    }
-
+    margin-bottom: 0.5rem;
     /* FIRST LEVEL */
     ul {
-      list-style: none;
-      padding-top: 40px;
-      width: 100%;
-      margin: 0px auto;
+      width: 70%;
+      padding: 0px;
+      margin: 0px auto 8px;
+      list-style-type: none;
+      /* background-color: #E3E3E3; */
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+    ul li {
+      display: inline-block;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 0;
+
+      border-radius: 2px;
+      margin-right: 2px;
+      &:last-child {
+         margin-right: 0px;
+      }
+
+      &.current-page {
+        background: #E3E3E3;
+      }
+
+    }
+    ul li a {
+      color: #292929;
+      text-decoration: none;
+      padding: 12px 0px;
       text-align: center;
-
-      @mixin atSmall {
-        width: 100%;
-      }
-
-      @mixin atMedium {
-        padding-top: 0px;
-        width: 90%;
-        margin: 0px auto;
-        display: flex;
-        justify-content: space-around;
-      }
-
-      @mixin atLarge {
-        width: 80%;
-      }
-
-    }
-
-    li {
       display: block;
-      font-size: 1.6rem;
+      position: relative;
       text-transform: uppercase;
-      font-weight: 300;
-      padding: 2px 0px;
-      padding-left: 0px;
-      border-bottom: 1px dotted #F8F8F8;
-
-      @mixin atMedium {
-        padding: 0px;
-        font-size: 1.5rem;
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 0;
-        text-align: center;
-        line-height: 1.4;
-        transition: background-color 0.2s;
-
-        &:hover {
-
-        }
-
-      }
-
+      font-size: 1.3rem;
     }
-
-    a:link,
-    a:visited {
-      display: block;
-      padding: 1.6rem 1rem;
-      color: #F8F8F8;
-      transition: color 0.2s;
-
-      @mixin atMedium {
-        padding: 0px;
-        background-color: transparent;
-        border-radius: none;
-        color: $color-dark;
-      }
-
-    }
-
-    @mixin atMedium {
-      li a {
-        border-right: 2px solid $color-dark;
-      }
-
-      li:last-child a {
-        border-right: none;
-      }
-    }
-
-    a:hover,
-    a:focus {
-
-      color: $color-green;
-
-      @mixin atMedium {
-        color: $color-dark;
-        font-weight: 500;
-        border-bottom: none;
-      }
-
+    ul li:hover {
+      background: lightgrey;
     }
 
     /* SECOND LEVEL */
-
     ul ul {
       position: absolute;
-      min-width: 200px;
+      max-width: 200px;
       background: lightgrey;
-      display: block;
-      /* display: none; */
+      visibility: hidden;
+      opacity: 0;
+      /* transition: visibility 0s, opacity 0.1s ease-out; */
     }
-
     ul ul li {
       display: block;
-      border: 1px solid slateblue;
+      background: #E3E3E3;
     }
-
-    .current-page {
-
-      @mixin atMedium {
-        border-radius: 2px;
-
-        &:hover,
-        &:focus {
-        }
-
-      }
-
+    ul ul li a {
+      text-align: left;
+      padding-left: 2rem;
     }
-    .current-page a:link,
-    .current-page a:visited {
-
-      color: $color-grey-light;
-
-      @mixin atMedium {
-        color: $color-dark;
-        font-weight: 500;
-      }
-
-    }
-    .current-page a:hover,
-    .current-page a:focus {
-      cursor: default;
-
-      @mixin atMedium {
-        color: $color-dark;
-        font-weight: 500;
-      }
-
-    }
-
-
-
-    &--is-visible {
+    ul li:hover ul {
+      display: block;
+      visibility: visible;
       opacity: 1;
-      position: relative;
-      transform: scale(1);
-      z-index: 20;
     }
+    ul li i {
+      color: #292929;
+      position: absolute;
+      right: 1rem;
+      top: 1.4rem;
+    }
+
+
 
   } /* &__main-navigation */
 
 } /* .site-header */
+
+

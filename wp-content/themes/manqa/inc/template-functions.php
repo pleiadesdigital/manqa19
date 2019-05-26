@@ -26,7 +26,7 @@ function pageBanner($args = NULL) {
 		if (get_field('banner_image')) {
 			$args['photo'] = get_field('banner_image')['sizes']['pageBanner'];
 		} else {
-			$args['photo'] = get_theme_file_uri('/images/banners/banner-escuelas.jpg');
+			$args['photo'] = get_theme_file_uri('/images/banners/banner-default.jpg');
 		}
 	}
 ?>
@@ -34,7 +34,6 @@ function pageBanner($args = NULL) {
 		<div class="page-banner__bg-image" style="background-image: url(<?php
 			echo $args['photo'];
 		?>);"></div>
-
 		<div class="page-banner__content wrapper wrapper--medium">
 			<header class="entry-header">
 				<h1 class="page-banner__title"><?php echo $args['title']; ?></h1>
@@ -43,7 +42,14 @@ function pageBanner($args = NULL) {
 				</div>
 			</header>
 		</div>
-
 	</div><!-- class="page-banner" -->
+	<!-- LINEA ADORNO DE COLORES     -->
+	<div class="large-hero__bottom-line">
+			<span class="large-hero__bottom-line--col1"></span>
+			<span class="large-hero__bottom-line--col2"></span>
+			<span class="large-hero__bottom-line--col3"></span>
+			<span class="large-hero__bottom-line--col4"></span>
+			<span class="large-hero__bottom-line--col5"></span>
+	</div>
 <?php }
 

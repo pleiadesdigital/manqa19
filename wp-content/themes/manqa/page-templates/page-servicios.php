@@ -1,5 +1,5 @@
 <?php
-  // Template Name: Escuelas Template
+  // Template Name: Servicios Template
   // Template Type: post, page
 ?>
 
@@ -21,9 +21,11 @@
 				?>
 
 				<div class="metabox metabox--position-up metabox--with-home-link">
-					<p><a class="metabox__blog-home-link" href="<?php echo get_permalink($theParent); ?>"><i class="fa fa-university" aria-hidden="true"></i>&nbsp; Volver a <?php echo get_the_title($theParent); ?></a> <span class="metabox__main"><?php the_title(); ?></span></p>
+					<p><a class="metabox__blog-home-link" href="<?php echo get_permalink($theParent); ?>"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp; Volver a <?php echo get_the_title($theParent); ?></a> <span class="metabox__main"><?php the_title(); ?></span></p>
 				</div>
 				<?php endif; ?>
+
+
 
 				<!-- MAIN CONTENT -->
 				<div class="generic-content-container escuelas">
@@ -31,7 +33,6 @@
 						<?php the_content(); ?>
 					</div>
 				</div>
-
 			</div>
 
 		</main><!-- #main -->
