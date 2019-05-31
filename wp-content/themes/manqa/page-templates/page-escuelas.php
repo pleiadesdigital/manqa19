@@ -29,10 +29,41 @@
 				<div class="generic-content-container escuelas">
 					<div class="entry-content escuelas__main-content">
 						<?php the_content(); ?>
+
+						<?php if (!$theParent) : ?>
+
+						<div class="landing_cpt">
+							<p>Elige un país para obtener información sobre nuestras escuelas:</p>
+							<a href="<?php echo site_url('escuelas-bolivia'); ?>" class="btn btn--gradient-green-bol">BOLIVIA</a>
+							<a href="<?php echo site_url('escuelas-colombia'); ?>" class="btn btn--large btn--gradient-yellow-col">COLOMBIA</a>
+						</div> <!-- class="landing_cpt" -->
+
+						<?php endif; ?>
+
 					</div>
 				</div>
 
 			</div>
+
+
+			<?php if (get_field("page_internal_image")) : ?>
+
+			<div class="page-section__photo-separator-container">
+				<div class="page-section__photo-separator-image" style="background-image: url('<?php echo get_field('page_internal_image')['sizes']['pageBanner']; ?>');"></div>
+			</div>
+
+			<?php endif; ?>
+
+			<!-- MAIN CONTENT -->
+			<div class="generic-content-container escuelas">
+				<div class="entry-content escuelas__main-content escuelas__main-content--second">
+					<?php echo get_field("second_content"); ?>
+				</div>
+			</div>
+
+
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

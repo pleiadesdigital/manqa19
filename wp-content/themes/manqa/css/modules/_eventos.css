@@ -1,0 +1,28 @@
+.eventos {
+
+  margin-top: -3rem;
+
+  h6 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    color: $color-sea-blue;
+  }
+
+  h5 {
+    color: $color-sea-blue;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 3rem;
+  }
+
+
+
+}

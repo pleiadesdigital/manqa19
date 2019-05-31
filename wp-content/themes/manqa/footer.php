@@ -20,12 +20,15 @@
 
             <div class="site-footer__info--contacto">
                 <h3>contáctanos.</h3>
-                <p>Email: info@futuralab.net</p>
-                <p>Tel: +591.69750000</p>
+                <div class="site-footer__info--contacto--ep">
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@futuralab.net</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +591.69750000</p>
+                </div>
+
             </div>
 
             <div class="site-footer__info--redes">
-                <ul>
+                <ul class="site-footer__info--redes-ul">
                     <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>

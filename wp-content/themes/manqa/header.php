@@ -44,7 +44,7 @@
 						<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php  ?></button> -->
 						<ul>
 							<li <?php if (is_page("nosotros")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/nosotros'); ?>">Nosotros</a></li>
-							<li <?php if (is_page("escuelas")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/escuelas'); ?>">Escuelas <i class="fa fa-sort-desc"></i></a>
+							<li <?php if (is_page("escuelas")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('escuelas'); ?>">Escuelas <i class="fa fa-sort-desc"></i></a>
 								<ul class="site-header__main-navigation--submenu">
 									<li <?php if (is_page("escuelas-bolivia")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/escuelas-bolivia'); ?>">Escuelas Bolivia</a></li>
 									<li <?php if (is_page("escuelas-colombia")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/escuelas-colombia'); ?>">Escuelas Colombia</a></li>

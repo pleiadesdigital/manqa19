@@ -22,8 +22,11 @@
 @import "modules/_navigation";
 @import "modules/_metabox";
 @import "modules/_large-hero";
-@import "modules/_projects";
 @import "modules/_escuelas";
+@import "modules/_projects";
+@import "modules/_servicios";
+@import "modules/_eventos";
+@import "modules/_modelos";
 @import "modules/_stats";
 @import "modules/_noticias";
 @import "modules/_nosotros";

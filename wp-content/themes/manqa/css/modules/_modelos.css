@@ -1,0 +1,64 @@
+.modelos {
+
+  h6 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    color: $color-sea-blue;
+  }
+
+  h5 {
+    color: $color-sea-blue;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 3rem;
+  }
+
+  /* PHOTO BLOCKS */
+  .wp-block-column {
+    position: relative;
+    &__square {
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      border-radius: 10px;
+      &-1 {
+        background-color: $color-dark-blue;
+      }
+      &-2 {
+        background-color: $color-pink-btn;
+      }
+      &-3 {
+        background-color: $color-green-bol;
+      }
+      &-4 {
+        background-color: $color-purple;
+      }
+    }
+  } /* .wp-block-column */
+  .wp-block-column:first-child {
+    padding: 0px;
+    .wp-block-image {
+      margin: 0px;
+      padding: 12px 0px 0px 12px;
+      position: relative;
+      z-index: 10;
+      img {
+        display: block;
+        margin: 0px;
+        border-radius: 30px;
+      } /* img */
+    } /* .wp-block-image */
+  } /* .wp-block-column:first-child */
+
+
+}

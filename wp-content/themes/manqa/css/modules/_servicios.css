@@ -1,0 +1,27 @@
+.servicios {
+
+
+  h6 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    color: $color-sea-blue;
+  }
+
+  h5 {
+    color: $color-sea-blue;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__para-contact {
+    padding: 0px;
+    margin: 5px !important;
+    font-size: 1.6rem !important;
+  }
+
+
+}

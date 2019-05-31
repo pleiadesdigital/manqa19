@@ -27,4 +27,28 @@
     color: $carbon;
   }
 
-}
+
+  /* PHOTO SEPARATOR */
+
+  &__photo-separator-container {
+    position: relative;
+    display: block;
+    min-height: 500px;
+    margin-top: -40px;
+  }
+
+  &__photo-separator-image {
+    /* background-image: url("http://localhost:3000/~ronyortiz/projects/manqa/wp-content/themes/manqa/images/interior/interior-escuelas-bolivia.jpg"); */
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
+
+} /* .page-section */

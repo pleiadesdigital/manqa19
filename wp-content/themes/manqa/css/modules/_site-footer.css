@@ -24,12 +24,16 @@
 
     &--text {
       display: block;
-      h3 {
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 1.8rem;
-        color: #FFFFFF;
-        line-height: 2;
+      p {
+        display: block;
+        margin: 1rem auto;
+        width: 50%;
+        max-width: 500px;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
+
       }
       ul {
         list-style: none;
@@ -53,58 +57,58 @@
       display: block;
       h3 {
         text-transform: uppercase;
-        font-weight: 400;
-        font-size: 1.8rem;
+        font-weight: 600;
+        font-size: 4rem;
+        margin: 0px;
         color: #FFFFFF;
         line-height: 2;
       }
-      ul {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-        margin-left: 1.5rem;
-        color: $color-grey-light;
+      &--ep {
+        width: 50%;
+        max-width: 500px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
       }
-      li {
-        text-align: left;
-        margin-bottom: 1rem;
-        list-style: square;
-      }
-      a {
-        font-size: 1.3rem;
-        color: $color-grey-light;
-        font-weight: 200;
+      p {
+        margin-right: 3rem;
+        font-size: 1.4rem;
+        &:last-child {
+          margin-right: 0px;
+        }
+        .fa {
+          margin-right: 0.3rem;
+        }
       }
     } /* &--contacto */
 
     &--redes {
       display: block;
-      h3 {
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 1.8rem;
-        color: $color-grey-light;
-        line-height: 2;
-        border-bottom: 1px dotted $color-grey-light;
-      }
-      ul {
-        list-style: none;
+      margin: 3rem auto;
+      width: 70%;
+      max-width: 300px;
+      &-ul {
+        font-size: 3rem;
+        list-style-type: none;
         margin: 0px;
-        padding: 0px;
-        margin-left: 1.5rem;
-        color: $color-grey-light;
+        padding: 2rem 1rem;
+        background-color: $color-dark-blue;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+
+
+        li {
+          background-color: $color-sea-blue;
+          padding: 1rem 2rem;
+        }
+
+        .fab {
+          color: #FFFFFF;
+        }
+
       }
-      li {
-        text-align: center;
-        margin-bottom: 1rem;
-        list-style: square;
-        display: inline-block;
-      }
-      a {
-        font-size: 1.3rem;
-        color: $color-grey-light;
-        font-weight: 200;
-      }
+
     } /* &--redes */
 
   } /* &__info */

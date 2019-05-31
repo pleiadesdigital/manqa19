@@ -30,3 +30,7 @@ img {
 .menu-toggle {
   display: none;
 }
+
+#page {
+  overflow-x: hidden;
+}

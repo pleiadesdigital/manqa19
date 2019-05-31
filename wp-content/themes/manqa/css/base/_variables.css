@@ -15,6 +15,12 @@ $color-purple: rgb(150, 87, 153);
 $color-blue: rgb(0, 54, 122);
 $color-sea-blue: rgb(17, 72, 108);
 $color-dark-blue: rgb(32, 55, 87);
+$color-purple: rgb(149, 54, 123);
+
+$color-green-bol: rgb(65, 173, 73);
+$color-yellow-col: rgb(253, 181, 21);
+$color-grey-btn: rgb(86, 87, 89);
+$color-pink-btn: rgb(237, 19, 93);
 
 $color-map-background: rgb(221, 221, 223); /* #DDDDD2 */
 
