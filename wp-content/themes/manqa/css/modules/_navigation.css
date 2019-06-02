@@ -93,7 +93,7 @@
       visibility: hidden;
       opacity: 0;
       top: 100%;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.9);
       /* transition: visibility 0s, opacity 0.1s ease-out; */
     }
     ul ul li {

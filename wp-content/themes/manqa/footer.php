@@ -29,9 +29,9 @@
 
             <div class="site-footer__info--redes">
                 <ul class="site-footer__info--redes-ul">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="hexagon hexagon-f"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="hexagon hexagon-m"><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                    <li class="hexagon hexagon-t"><a href="#"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
 

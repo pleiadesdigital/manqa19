@@ -427,6 +427,55 @@ img {
   margin-top: 6rem;
 }
 
+/* .hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+  }
+
+  &:before {
+    bottom: 100%;
+    border-bottom: 86.60px solid #64C7CC;
+  }
+
+  &:after {
+    top: 100%;
+    width: 0px;
+    border-top: 86.60px solid #64C7CC;
+  }
+
+} */
+
+.hexagon {
+  padding: 1.5rem;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+
+}
+
+.hexagon-f {
+    background-color: rgb(34, 140, 192);
+  }
+
+.hexagon-m {
+    background-color: rgb(57, 170, 224);
+  }
+
+.hexagon-t {
+    background-color: rgb(101, 190, 227);
+  }
+
 .btn {
   display: inline-block;
   background-color: rgb(15, 13, 11);
@@ -1384,7 +1433,7 @@ img {
       visibility: hidden;
       opacity: 0;
       top: 100%;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.9);
       /* transition: visibility 0s, opacity 0.1s ease-out; */
     }
 
@@ -1760,29 +1809,32 @@ img {
     }
 
 .projects__card figure .figcaption--1 {
-        background-color: rgba(229, 74, 36, 0.7);
-        -webkit-filter: brightness(70%);
-                filter: brightness(70%);
+        background-color: rgba(229, 74, 36, 0.5);
+        -webkit-filter: brightness(100%);
+                filter: brightness(100%);
         border-radius: 20px;
       }
 
 .projects__card figure .figcaption--2 {
-        background-color: rgba(150, 87, 153, 0.7);
-        -webkit-filter: brightness(70%);
-                filter: brightness(70%);
+        background-color: rgba(150, 87, 153, 0.5);
+        -webkit-filter: brightness(100%);
+                filter: brightness(100%);
         border-radius: 20px;
       }
 
 .projects__card figure .figcaption--3 {
-        background-color: rgba(115, 178, 31, 0.7);
-        -webkit-filter: brightness(70%);
-                filter: brightness(70%);
+        background-color: rgba(115, 178, 31, 0.5);
+        -webkit-filter: brightness(100%);
+                filter: brightness(100%);
         border-radius: 20px;
       }
 
 .projects__card figure .figcaption h2 {
         text-transform: uppercase;
-        font-weight: 200;
+        font-weight: 400;
+        position: relative;
+        z-index: 200;
+        color: #FFFFFF;
         font-size: 2.6rem;
         line-height: 1.2;
         -webkit-transform: translateY(-200px);
@@ -1792,7 +1844,7 @@ img {
       }
 
 .projects__card figure .figcaption p {
-        font-weight: 200;
+        font-weight: 400;
         font-size: 1.4rem;
         line-height: 1.1;
         -webkit-transform: translateX(-500px);
@@ -2361,12 +2413,13 @@ img {
       }
 
 .site-footer__info--redes-ul li {
-          background-color: rgb(17, 72, 108);
-          padding: 1rem 2rem;
+          /* background-color: $color-sea-blue; */
+          /* padding: 1rem 2rem; */
         }
 
 .site-footer__info--redes-ul .fab {
           color: #FFFFFF;
+          font-size: 3.6rem;
         }
 
 /* &__info */

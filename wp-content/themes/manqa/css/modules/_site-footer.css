@@ -99,12 +99,13 @@
 
 
         li {
-          background-color: $color-sea-blue;
-          padding: 1rem 2rem;
+          /* background-color: $color-sea-blue; */
+          /* padding: 1rem 2rem; */
         }
 
         .fab {
           color: #FFFFFF;
+          font-size: 3.6rem;
         }
 
       }
