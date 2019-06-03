@@ -1,5 +1,5 @@
 .projects {
-
+  position: relative;
   padding: 2rem 0px 2rem;
   @mixin atMedium {
      padding: 4rem 0px 4rem;
@@ -34,14 +34,37 @@
 
 .projects__card {
 
+  &--square1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 300;
+    top: -20px;
+    left: -20px;
+    background-color: $color-blue;
+    border-radius: 10px;
+  }
+  &--square2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 300;
+    bottom: -20px;
+    right: -20px;
+    background-color: $color-blue;
+    border-radius: 10px;
+  }
+
+  position: relative;
+
   /* IMAGES */
 
   figure {
-     position: relative;
-
-     width: 100%;
-     height: auto;
-     margin: 0px auto;
+    position: relative;
+    z-index: 400;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
 
      img {
        border-radius: 20px;
@@ -70,6 +93,22 @@
         background-color: rgba(229, 74, 36, 0.5);
         filter: brightness(100%);
         border-radius: 20px;
+        &-top {
+          transform: translateY(-200px);
+          transition: all 0.3s ease-in-out;
+        }
+        &-middle {
+          height: 5px;
+          width: 200px;
+          content: " ";
+          border-bottom: 3px solid #FFFFFF;
+          transform: translateX(-230px);
+          transition: all 0.3s ease-in-out;
+        }
+        &-bottom {
+          transform: translateY(200px);
+           transition: all 0.3s ease-in-out;
+        }
       }
 
       &--2 {
@@ -94,30 +133,54 @@
         line-height: 1.2;
         transform: translateY(-200px);
         transition: all 0.4s ease-out;
-        /* transition-delay: 0.2s; */
+        transition-delay: 0.2s;
       }
-
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 2rem;
+        position: relative;
+        z-index: 200;
+        color: #FFFFFF;
+        font-size: 2.6rem;
+        line-height: 1.2;
+      }
       p {
         font-weight: 400;
         font-size: 1.4rem;
-        line-height: 1.1;
+        line-height: 1.3;
         transform: translateX(-500px);
         transition: all 0.2s ease-out;
-        /* transition-delay: 0.2s; */
+        transition-delay: 0.2s;
       }
-
       a {
-        margin-top: 2rem;
-        transform: translateY(200px);
-        transition: all 0.1s ease-out;
-        /* transition-delay: 0.4s; */
+        color: #FFFFFF;
+        &:hover {
+          text-decoration: underline;
+        }
       }
-
+      .btn--delay {
+        margin-top: 2rem;
+        color: #FFFFFF;
+        transform: translateY(200px);
+        transition: all 0.3s ease-out;
+        transition-delay: 0.6s;
+      }
 
     }
 
     &:hover figcaption {
       opacity: 1;
+    }
+
+    &:hover .figcaption--1-top {
+      transform: translateY(0px);
+    }
+    &:hover .figcaption--1-middle {
+      transform: translateX(0px);
+    }
+    &:hover .figcaption--1-bottom {
+      transform: translateY(0px);
     }
 
     &:hover h2 {
@@ -128,10 +191,9 @@
       transform: translateX(0px);
       transition-delay: 0.3s;
     }
-    &:hover a {
+    &:hover .btn--delay {
       transform: translateY(0px);
       transition-delay: 0s;
-
     }
 
   }

@@ -1372,7 +1372,8 @@ img {
 @media (min-width: 800px) {
 
 .site-header__main-navigation ul li.current-page {
-          background: #E3E3E3
+          background-color: transparent;
+          text-decoration: underline
       }
   }
 
@@ -1729,7 +1730,7 @@ img {
 /* .escuelas */
 
 .projects {
-
+  position: relative;
   padding: 2rem 0px 2rem;
   background-color: rgb(230, 230, 230);
 
@@ -1771,14 +1772,42 @@ img {
     text-align: center;
   }
 
+.projects__card {
+
+  position: relative;
+
+}
+
+.projects__card--square1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 300;
+    top: -20px;
+    left: -20px;
+    background-color: rgb(0, 54, 122);
+    border-radius: 10px;
+  }
+
+.projects__card--square2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 300;
+    bottom: -20px;
+    right: -20px;
+    background-color: rgb(0, 54, 122);
+    border-radius: 10px;
+  }
+
 /* IMAGES */
 
 .projects__card figure {
-     position: relative;
-
-     width: 100%;
-     height: auto;
-     margin: 0px auto;
+    position: relative;
+    z-index: 400;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
 
   }
 
@@ -1805,7 +1834,6 @@ img {
       transition-delay: 0.2s;
       overflow: hidden;
 
-
     }
 
 .projects__card figure .figcaption--1 {
@@ -1814,6 +1842,28 @@ img {
                 filter: brightness(100%);
         border-radius: 20px;
       }
+
+.projects__card figure .figcaption--1-top {
+          -webkit-transform: translateY(-200px);
+                  transform: translateY(-200px);
+          transition: all 0.3s ease-in-out;
+        }
+
+.projects__card figure .figcaption--1-middle {
+          height: 5px;
+          width: 200px;
+          content: " ";
+          border-bottom: 3px solid #FFFFFF;
+          -webkit-transform: translateX(-230px);
+                  transform: translateX(-230px);
+          transition: all 0.3s ease-in-out;
+        }
+
+.projects__card figure .figcaption--1-bottom {
+          -webkit-transform: translateY(200px);
+                  transform: translateY(200px);
+           transition: all 0.3s ease-in-out;
+        }
 
 .projects__card figure .figcaption--2 {
         background-color: rgba(150, 87, 153, 0.5);
@@ -1840,29 +1890,64 @@ img {
         -webkit-transform: translateY(-200px);
                 transform: translateY(-200px);
         transition: all 0.4s ease-out;
-        /* transition-delay: 0.2s; */
+        transition-delay: 0.2s;
+      }
+
+.projects__card figure .figcaption h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 2rem;
+        position: relative;
+        z-index: 200;
+        color: #FFFFFF;
+        font-size: 2.6rem;
+        line-height: 1.2;
       }
 
 .projects__card figure .figcaption p {
         font-weight: 400;
         font-size: 1.4rem;
-        line-height: 1.1;
+        line-height: 1.3;
         -webkit-transform: translateX(-500px);
                 transform: translateX(-500px);
         transition: all 0.2s ease-out;
-        /* transition-delay: 0.2s; */
+        transition-delay: 0.2s;
       }
 
 .projects__card figure .figcaption a {
+        color: #FFFFFF;
+      }
+
+.projects__card figure .figcaption a:hover {
+          text-decoration: underline;
+        }
+
+.projects__card figure .figcaption .btn--delay {
         margin-top: 2rem;
+        color: #FFFFFF;
         -webkit-transform: translateY(200px);
                 transform: translateY(200px);
-        transition: all 0.1s ease-out;
-        /* transition-delay: 0.4s; */
+        transition: all 0.3s ease-out;
+        transition-delay: 0.6s;
       }
 
 .projects__card figure:hover figcaption {
       opacity: 1;
+    }
+
+.projects__card figure:hover .figcaption--1-top {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+
+.projects__card figure:hover .figcaption--1-middle {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+
+.projects__card figure:hover .figcaption--1-bottom {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
     }
 
 .projects__card figure:hover h2 {
@@ -1877,11 +1962,10 @@ img {
       transition-delay: 0.3s;
     }
 
-.projects__card figure:hover a {
+.projects__card figure:hover .btn--delay {
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
       transition-delay: 0s;
-
     }
 
 .servicios h6 {
@@ -2047,10 +2131,10 @@ img {
 .stats__card {
   margin: 3rem 0px;
   border-radius: 15px;
-
+  position: relative;
   width: 130px;
   height: 130px;
-
+  z-index: 400;
   text-align: center;
   color: #F8F8F8;
 
@@ -2075,6 +2159,7 @@ img {
 
 .stats__card--1 {
     background-color: rgb(229, 74, 36);
+
   }
 
 .stats__card--2 {

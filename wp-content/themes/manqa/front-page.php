@@ -26,44 +26,51 @@
         </div>
 
         <!-- MAIN PROJECTS -->
-        <div class="projects__cards generic-content-container">
+		<div class="projects__cards generic-content-container">
 
-            <div class="projects__card">
-                <figure>
-                    <img src="<?php echo get_theme_file_uri('images/about/services1.jpg'); ?>" alt="Proyecto 1">
-                    <figcaption class="figcaption figcaption--1">
-                        <h2>Provident ut nulla</h2>
-                        <p>Lorem ipsum dolor sit amet, consequat odio ipsum dolor aenean ac aliquam</p>
-                        <a href="#" class="btn btn--small btn--gradient-orange">Leer más</a>
-                    </figcaption>
-                </figure>
+			<div class="projects__card">
+				<div class="projects__card--square1"></div>
+				<figure>
+					<img src="<?php echo get_theme_file_uri('images/about/services1.jpg'); ?>" alt="Proyecto 1">
+					<figcaption class="figcaption figcaption--1">
+						<div class="figcaption--1-top">
+							<h3><a href="<?php echo site_url("/escuelas-bolivia"); ?>">Bolivia</a></h3>
+							<!-- <a href="#" class="btn btn--small btn--gradient-orange">Leer más</a> -->
+						</div>
+						<div class="figcaption--1-middle"></div>
+						<div class="figcaption--1-bottom">
+							<h3><a href="<?php echo site_url("/escuelas-colombia"); ?>">Colombia</a></h3>
+							<!-- <a href="#" class="btn btn--small btn--gradient-orange">Leer más</a> -->
+						</div>
+					</figcaption>
+				</figure>
+			</div>
 
-            </div>
+			<div class="projects__card">
+				<figure>
+					<img src="<?php echo get_theme_file_uri('images/about/services2.jpg'); ?>" alt="Proyecto 2">
+					<figcaption class="figcaption figcaption--2">
+						<h2>Modelos</h2>
+						<p>Modelo Educativo <br> Modelo de Inserción Laboral <br> Modelo de Emprendimientos <br> Modelo de Mentoría</p>
+						<a href="<?php echo site_url("/modelos"); ?>" class="btn btn--small btn--gradient-purple btn--delay">Leer más</a>
+					</figcaption>
+				</figure>
+			</div>
 
-            <div class="projects__card">
-                <figure>
-                    <img src="<?php echo get_theme_file_uri('images/about/services2.jpg'); ?>" alt="Proyecto 2">
-                    <figcaption class="figcaption figcaption--2">
-                        <h2>Magna neque sollicitudin</h2>
-                        <p>Lorem ipsum dolor sit amet, consequat odio ipsum dolor aenean ac aliquam</p>
-                        <a href="#" class="btn btn--small btn--gradient-purple">Leer más</a>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="projects__card">
-                <figure>
-                    <img src="<?php echo get_theme_file_uri('images/about/services3.jpg'); ?>" alt="Proyecto 3">
-                    <figcaption class="figcaption figcaption--3">
-                        <h2>Amet tellus etiam</h2>
-                        <p>Lorem ipsum dolor sit amet, consequat odio ipsum dolor aenean ac aliquam</p>
-                        <a href="#" class="btn btn--small btn--gradient-green">Leer más</a>
-                    </figcaption>
-                </figure>
-            </div>
+			<div class="projects__card">
+					<div class="projects__card--square2"></div>
+					<figure>
+							<img src="<?php echo get_theme_file_uri('images/about/services3.jpg'); ?>" alt="Proyecto 3">
+							<figcaption class="figcaption figcaption--3">
+									<h2>Servicios</h2>
+									<p>Catering <br> Restaurant <br> Turismo</p>
+									<a href="<?php echo site_url("/servicios"); ?>" class="btn btn--small btn--gradient-green btn--delay">Leer más</a>
+							</figcaption>
+					</figure>
+			</div>
 
 
-        </div>
+		</div>
 
         <div class="projects__title-text m-top-larger">
             <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
@@ -90,25 +97,27 @@
     <div class="wrapper">
         <!-- MAIN PROJECTS -->
         <div class="stats__cards generic-content-container">
+
             <div class="stats__card stats__card--1">
-                <h2>3155</h2>
-                <p>JÓVENES GRADUADOS</p>
+							<h2>3155</h2>
+							<p>JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--2">
-                <h2>3155</h2>
-                <p>JÓVENES GRADUADOS</p>
+							<h2>3155</h2>
+							<p>JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--3">
-                <h2>3155</h2>
-                <p>JÓVENES GRADUADOS</p>
+							<h2>3155</h2>
+							<p>JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--4">
-                <h2>3155</h2>
-                <p>JÓVENES GRADUADOS</p>
+							<h2>3155</h2>
+							<p>JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--5">
-                <h2>3155</h2>
-                <p>JÓVENES GRADUADOS</p>
+							<div class="stats__card--square2"></div>
+							<h2>3155</h2>
+							<p>JÓVENES GRADUADOS</p>
             </div>
         </div>
     </div> <!-- wrapper -->
