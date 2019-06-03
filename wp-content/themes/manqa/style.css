@@ -1990,6 +1990,33 @@ img {
     font-size: 1.6rem !important;
   }
 
+.contacto h6 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0px 0px 3rem;
+    text-align: center;
+    color: rgb(17, 72, 108);
+  }
+
+.contacto__addresses {
+    border: 1px solid sandybrown;
+
+  }
+
+.contacto h5 {
+    font-size: 2.4rem;
+    color: rgb(17, 72, 108);
+    margin: 4rem 0px 1rem;
+    text-align: left;
+  }
+
+.contacto p {
+    margin: 0px;
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+
 .eventos {
 
   margin-top: -3rem;
