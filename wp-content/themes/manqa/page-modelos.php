@@ -5,7 +5,7 @@
 
 	<!-- PAGE BANNER -->
 	<?php pageBanner(array(
-		'photo'				=> get_theme_file_uri('images/banners/banner-modelos.jpg')
+		'photo'				=> get_theme_file_uri('images/banners/banner-103.jpg')
 	)); ?>
 
 	<div id="primary" class="content-area">

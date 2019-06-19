@@ -4,7 +4,7 @@
   position: relative;
 
   @mixin atSmall {
-    padding: 400px 0px 60px 0px;
+    padding: 400px 0px 40px 0px;
   }
 
   &__content {
@@ -22,10 +22,18 @@
     filter: brightness(0.95) contrast(1.1) opacity(0.9);
   }
 
+  .entry-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+
+  }
+
   &__title {
     font-weight: 300;
     font-size: 3.4rem;
-    margin: 0px 0px 1rem 0px;
+    margin: 0px;
     color: $color-grey-light-1;
     text-transform: uppercase;
     text-align: center;

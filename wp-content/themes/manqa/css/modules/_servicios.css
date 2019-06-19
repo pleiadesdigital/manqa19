@@ -1,6 +1,5 @@
 .servicios {
-
-
+  padding-top: 3rem;
   h6 {
     font-size: 2rem;
     font-weight: 600;
@@ -8,7 +7,6 @@
     text-align: center;
     color: $color-sea-blue;
   }
-
   h5 {
     color: $color-sea-blue;
     font-size: 2rem;
@@ -16,12 +14,53 @@
     margin-bottom: 2rem;
     text-transform: uppercase;
   }
-
   &__para-contact {
     padding: 0px;
     margin: 5px !important;
     font-size: 1.6rem !important;
   }
 
+  &__craft-bottom {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+    height: 500px;
+    @mixin atMedium {
+      height: 700px;
+    }
+    img {
+      display: block;
+      position: absolute;
+      height: 500px;
+      width: auto;
+      top: 0px;
+      left: -20%;
+      @mixin atMedium {
+        height: 700px;
+      }
+    }
 
+  }
 }
+
+.page-id-59 {
+
+  .site-header {
+    background-color: $white;
+  }
+
+  background-color: $color-grey;
+  .servicios {
+    padding-top: 0px;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li, a{
+    color: $white;
+  }
+  .metabox__main {
+    color: rgb(11, 8, 27);
+  }
+} /* .page-id-59 */
+
+

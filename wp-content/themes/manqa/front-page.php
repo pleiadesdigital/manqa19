@@ -68,8 +68,6 @@
 							</figcaption>
 					</figure>
 			</div>
-
-
 		</div>
 
         <div class="projects__title-text m-top-larger">
@@ -124,41 +122,48 @@
 </div> <!-- class="projects -->
 
 <!-- NOTICIAS -->
-<div id="noticias" class="noticias page-section">
+<?php
+  $args = array(
+    'posts_per_page'        => 3,
+    'post_type'             => 'post',
+    'category_name'         => 'noticias',
+    'order'                 => 'DESC'
+  );
+  $query = new WP_Query($args);
+?>
+<div id="noticiasfp" class="noticiasfp page-section">
   <div class="wrapper wrapper--medium">
 
-    <div class="noticias__item">
-      <figure class="noticias__item--figure">
-        <img src="<?php echo get_theme_file_uri("images/fpblog/fpblog-img1"); ?>" alt="noticias">
-      </figure>
-      <div class="noticias__item--text">
-        <h2>ESCUELAS ABREN</h2>
-        <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
-      </div>
-    </div>
+    <h2 class="section-title"><a href="<?php echo site_url('noticias'); ?>">Noticias</a></h2>
 
-    <div class="noticias__item">
-      <figure class="noticias__item--figure">
-        <img src="<?php echo get_theme_file_uri("images/fpblog/fpblog-img1"); ?>" alt="noticias">
-      </figure>
-      <div class="noticias__item--text">
-        <h2>ESCUELAS ABREN</h2>
-        <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
+    <?php while($query->have_posts()) : $query->the_post(); ?>
+    <div class="noticiasfp__item">
+
+      <div class="noticiasfp__item--figure">
+        <span class="noticiasfp__item--figure-square"></span>
+        <?php the_post_thumbnail(); ?>
       </div>
-    </div>
-    <div class="noticias__item">
-      <figure class="noticias__item--figure">
-        <img src="<?php echo get_theme_file_uri("images/fpblog/fpblog-img1"); ?>" alt="noticias">
-      </figure>
-      <div class="noticias__item--text">
-        <h2>ESCUELAS ABREN</h2>
-        <p>Buscamos que la formación gastronómica no sea un fin en sí mismo, sino un medio que nos permita tener un impacto mayor en la vida de los pequeños productores rurales, la de los consumidores finales, la de los jóvenes en situación vulnerable y sus familias.</p>
-      </div>
-    </div>
+
+      <div class="noticiasfp__item--text">
+        <div class="noticiasfp__item--text-content">
+          <div class="noticiasfp__item--text-titlemeta">
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <span class="metadata--date"><?php echo the_time('M j, Y'); ?></span>
+          </div>
+          <p><?php if (has_excerpt()) { echo get_the_excerpt(); } else { echo wp_trim_words(get_the_content(), 30); } ?></p>
+        </div>
+        <div class="noticiasfp__item--text-cta">
+          <span class="cta"><a href="<?php the_permalink(); ?>" class="btn btn--blog">Leer más</a></span>
+        </div>
 
 
+      </div>
+    </div><!-- class="noticias__item" -->
+    <?php endwhile; ?>
   </div>
 </div><!-- class="noticias -->
+
+<?php wp_reset_postdata(); ?>
 
 
 

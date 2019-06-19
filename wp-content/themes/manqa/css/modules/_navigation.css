@@ -1,24 +1,24 @@
 /* NAVIGATION */
 /* Site Header Navigation */
 .site-header {
-
   &__main-navigation {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     @mixin atMedium {
-      margin-bottom: 1.5rem;
+      /* overflow: hidden; */
     }
     /* FIRST LEVEL */
     ul {
       width: 70%;
       max-width: 300px;
       padding: 0px 0px 0.5rem;
-      margin: 0px auto 8px;
+      margin: 0px auto 0px;
       list-style-type: none;
       position: static;
       background: rgba(0, 0, 0, 0.2);
       opacity: 0;
       visibility: hidden;
       @mixin atMedium {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         max-width: 900px;
@@ -40,7 +40,6 @@
          margin-right: 0px;
          border-bottom: none;
       }
-
       &.current-page {
         background-color: $color-orange;
         @mixin atMedium {
@@ -48,15 +47,12 @@
           text-decoration: underline;
         }
       }
-
       @mixin atMedium {
         border-bottom: none;
-
-        &:last-child {
+        &:last-child a {
           border-right: none;
         }
       }
-
     }
     ul li a {
       color: #FFFFFF;
@@ -72,7 +68,6 @@
         color: #000000;
         border-right: 2px solid #000000;
       }
-
     }
     ul li:hover {
       @mixin atMedium {
@@ -86,7 +81,6 @@
         }
       }
     }
-
     /* SECOND LEVEL */
     ul ul {
       position: absolute;
@@ -111,7 +105,6 @@
       display: block;
       visibility: visible;
       opacity: 1;
-
     }
     ul li li:hover a {
       text-decoration: underline !important;
@@ -119,11 +112,17 @@
     ul li i {
       color: #292929;
       position: absolute;
-      right: 1.5rem;
+      right: 0px;
       top: 0.5rem;
+      @mixin atMedium {
+        right: 0.75rem;
+        top: 0.5rem;
+      }
+      @mixin atLarge {
+        right: 1rem;
+        top: 0.5rem;
+      }
     }
-
-
     /* MOBILE MENU */
     &--is-visible {
       ul {
@@ -143,12 +142,8 @@
         position: static;
         background: #E3E3E3;
       }
-
-
     }
-
   } /* &__main-navigation */
-
 } /* .site-header */
 
 

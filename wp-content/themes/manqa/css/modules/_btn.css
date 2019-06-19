@@ -2,7 +2,7 @@
   display: inline-block;
   background-color: $color-dark;
   color: #F8F8F8;
-  padding: 1.3rem 2.5rem;
+  padding: 1rem 2.2rem;
   font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -29,6 +29,18 @@
     color: #F8F8F8;
   }
 
+
+  /* BLOG */
+  &--blog:link,
+  &--blog:visited {
+    background-image: linear-gradient(to right, $color-dark-blue, color($color-dark-blue l(50%)));
+    color: #F8F8F8;
+    transition: all 1s;
+  }
+  &--blog:hover,
+  &--blog:focus {
+    background-image: linear-gradient(to left, $color-dark-blue, color($color-dark-blue l(50%)));
+  }
 
   /* BLUE */
   &--gradient-blue:link,
@@ -154,13 +166,16 @@
     padding: 1rem 2rem;
     min-width: 130px;
     font-size: 1.8rem;
-
     @mixin atSmall {
       font-size: 1.4rem;
     }
-
   }
+}
 
+/* CTA */
+.cta {
+  display: block;
+  margin-top: 2rem;
 }
 
 .landing_cpt {

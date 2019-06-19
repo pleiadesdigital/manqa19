@@ -37,19 +37,28 @@ function pageBanner($args = NULL) {
 		<div class="page-banner__content wrapper wrapper--medium">
 			<header class="entry-header">
 				<h1 class="page-banner__title"><?php echo $args['title']; ?></h1>
+				<?php if ($args['subtitle']) : ?>
 				<div class="page-banner__intro">
 					<p><?php echo $args['subtitle']; ?></p>
 				</div>
+				<?php endif; ?>
 			</header>
 		</div>
 	</div><!-- class="page-banner" -->
 	<!-- LINEA ADORNO DE COLORES     -->
-	<div class="large-hero__bottom-line">
+	<?php if (	is_page('restaurante')) : ?>
+		<div class="large-hero__bottom-crafts">
+			<img src="<?php echo get_theme_file_uri('/images/branding/manqa-colors-rest1.png'); ?>" alt="bottom-crafts">
+		</div>
+	<?php else : ?>
+		<div class="large-hero__bottom-line">
 			<span class="large-hero__bottom-line--col1"></span>
 			<span class="large-hero__bottom-line--col2"></span>
 			<span class="large-hero__bottom-line--col3"></span>
 			<span class="large-hero__bottom-line--col4"></span>
 			<span class="large-hero__bottom-line--col5"></span>
-	</div>
+		</div>
+	<?php endif; ?>
+
 <?php }
 

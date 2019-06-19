@@ -217,3 +217,115 @@
   } /* &__main-navigation */
 }
 
+/* SITE FOOTER */
+.site-footer {
+  background-color: $color-sea-blue;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4rem 1rem;
+  &__info {
+    padding: 1rem;
+    /* min-height: 300px; */
+    &--logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0px;
+      .logo-footer {
+        height: 50px;
+        margin: 0px 0px 0.5rem;
+      }
+      p {
+        color: #FFFFFF;
+        margin: 0px;
+      }
+    } /* &--logo */
+    &--text {
+      display: block;
+      p {
+        display: block;
+        margin: 1rem auto;
+        width: 50%;
+        max-width: 500px;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 1.5rem;
+      }
+      li {
+        text-align: left;
+        margin-bottom: 1rem;
+        list-style: square;
+      }
+      a {
+        font-size: 1.3rem;
+        color: $color-grey-light;
+        font-weight: 200;
+      }
+    } /* &--text */
+    &--contacto {
+      display: block;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 4rem;
+        margin: 0px;
+        color: #FFFFFF;
+        line-height: 2;
+      }
+      &--ep {
+        width: 50%;
+        max-width: 500px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        margin-right: 3rem;
+        font-size: 1.4rem;
+        &:last-child {
+          margin-right: 0px;
+        }
+        .fa {
+          margin-right: 0.3rem;
+        }
+      }
+    } /* &--contacto */
+    &--redes {
+      display: block;
+      margin: 3rem auto;
+      width: 70%;
+      max-width: 300px;
+      &-ul {
+        font-size: 3rem;
+        list-style-type: none;
+        margin: 0px;
+        padding: 2rem 1rem;
+        background-color: $color-dark-blue;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        li {
+          /* background-color: $color-sea-blue; */
+          /* padding: 1rem 2rem; */
+        }
+        .fab {
+          color: #FFFFFF;
+          font-size: 3.6rem;
+        }
+      }
+    } /* &--redes */
+  } /* &__info */
+  &__credits {
+    margin-top: 3rem;
+    color: $snow;
+  }
+}
+
+

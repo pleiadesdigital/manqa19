@@ -1,5 +1,5 @@
 .contacto {
-
+  padding: 4rem 1rem 6rem;
   h6 {
     font-size: 3rem;
     font-weight: 600;
@@ -7,12 +7,8 @@
     text-align: center;
     color: $color-sea-blue;
   }
-
   &__addresses {
-    border: 1px solid sandybrown;
-
   }
-
   h5 {
     font-size: 2.4rem;
     color: $color-sea-blue;

@@ -2,7 +2,7 @@
   position: relative;
   padding: 2rem 0px 2rem;
   @mixin atMedium {
-     padding: 4rem 0px 4rem;
+     padding: 0.5rem 0px 1rem;
   }
   background-color: $lightsilver;
 
@@ -22,7 +22,7 @@
     display: block;
     width: 85%;
     margin: 2rem auto 2rem;
-    padding: 2rem 0px;
+    padding: 0.5rem 0px 2rem;
     color: $color-sea-blue;
     font-weight: 300;
     font-size: 2.2rem;

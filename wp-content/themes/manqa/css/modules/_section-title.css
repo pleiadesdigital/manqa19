@@ -7,11 +7,9 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-
     @mixin atSmall {
       font-size: 4rem;
     }
-
   }
 
   strong {
@@ -23,4 +21,17 @@
     font-size: 3rem;
   }
 
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  margin-top: 0px;
+  a {
+    &:hover {
+      border-bottom: 1px solid $black;
+    }
+  }
 }

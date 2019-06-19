@@ -5,6 +5,7 @@
 
 	<!-- PAGE BANNER -->
 	<?php pageBanner(array(
+		'title'				=> 'Contáctanos',
 		'photo'				=> get_theme_file_uri('images/banners/banner-contacto.jpg')
 	)); ?>
 
@@ -16,7 +17,9 @@
 				<!-- MAIN CONTENT -->
 				<div class="generic-content-container contacto">
 					<div class="entry-content contacto__main-content">
+
 						<?php the_content(); ?>
+
 					</div>
 				</div>
 			</div>

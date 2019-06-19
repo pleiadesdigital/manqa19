@@ -1,5 +1,5 @@
 .nosotros {
-  padding: 2rem 0px 0px;
+  padding: 2rem 0px 4rem;
 
   &__main-content {
     display: block;
@@ -95,7 +95,7 @@
         width: 30%;
       }
       @mixin atMedium {
-        width: 23%;
+        width: 20%;
       }
       background-color: #FFFFFF;
       padding: 1rem;

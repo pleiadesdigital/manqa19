@@ -2,122 +2,214 @@
   background-color: $color-sea-blue;
   color: #FFFFFF;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 0px;
 
-  &__info {
-    padding: 1rem;
-    /* min-height: 300px; */
+  &__top {
+    padding: 2rem 2rem 4rem 0px;
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+      grid-gap: 40px;
+      align-items: start;
+    }
     &--logo {
+      height: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 2rem 0px;
+      padding: 0px;
       .logo-footer {
-        height: 50px;
-        margin: 0px 0px 0.5rem;
-      }
-      p {
-        color: #FFFFFF;
-        margin: 0px;
-      }
-    } /* &--logo */
-
-    &--text {
-      display: block;
-      p {
-        display: block;
-        margin: 1rem auto;
         width: 50%;
-        max-width: 500px;
-        font-size: 1.4rem;
-        font-weight: 300;
-        line-height: 1.4;
-        text-align: center;
-
+        margin: 0px;
+        @mixin atSmall {
+          width: 150px;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    &--servicios {
+      display: block;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $color-grey-light-1;
+        line-height: 2;
+        border-bottom: 1px dotted $color-grey-light-1;
       }
       ul {
         list-style: none;
         margin: 0px;
         padding: 0px;
         margin-left: 1.5rem;
+        color: $color-grey-light-1;
       }
       li {
-        text-align: left;
+        text-align: center;
+        list-style: none;
+        @mixin atMedium {
+          text-align: center;
+          /* list-style: square; */
+        }
         margin-bottom: 1rem;
-        list-style: square;
       }
-      a {
-        font-size: 1.3rem;
-        color: $color-grey-light;
-        font-weight: 200;
+      a:link,
+      a:visited {
+        font-size: 1.4rem;
+        color: $color-grey-light-1;
+        font-weight: 300;
+        transition: color 0.2s;
       }
-    } /* &--text */
-
+      a:hover,
+      a:focus {
+        color: $color-grey-light-4;
+      }
+    }
+    &--noticias {
+      display: block;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $color-grey-light-1;
+        line-height: 2;
+        border-bottom: 1px dotted $color-grey-light-1;
+      }
+      ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 1.5rem;
+        color: $color-grey-light-1;
+      }
+      li {
+        text-align: center;
+        list-style: none;
+        @mixin atMedium {
+          text-align: center;
+          /* list-style: square; */
+        }
+        margin-bottom: 1rem;
+      }
+      a:link,
+      a:visited {
+        font-size: 1.4rem;
+        color: $color-grey-light-1;
+        font-weight: 300;
+        transition: color 0.2s;
+      }
+      a:hover,
+      a:focus {
+        color: $color-grey-light-4;
+      }
+    }
     &--contacto {
       display: block;
       h3 {
         text-transform: uppercase;
-        font-weight: 600;
-        font-size: 4rem;
-        margin: 0px;
-        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: $color-grey-light-1;
         line-height: 2;
+        border-bottom: 1px dotted $color-grey-light-1;
       }
-      &--ep {
-        width: 50%;
-        max-width: 500px;
-        margin: 0px auto;
-        display: flex;
-        justify-content: center;
-      }
-      p {
-        margin-right: 3rem;
-        font-size: 1.4rem;
-        &:last-child {
-          margin-right: 0px;
-        }
-        .fa {
-          margin-right: 0.3rem;
-        }
-      }
-    } /* &--contacto */
-
-    &--redes {
-      display: block;
-      margin: 3rem auto;
-      width: 70%;
-      max-width: 300px;
-      &-ul {
-        font-size: 3rem;
-        list-style-type: none;
+      ul {
+        list-style: none;
         margin: 0px;
-        padding: 2rem 1rem;
-        background-color: $color-dark-blue;
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-around;
-
-
-        li {
-          /* background-color: $color-sea-blue; */
-          /* padding: 1rem 2rem; */
-        }
-
-        .fab {
-          color: #FFFFFF;
-          font-size: 3.6rem;
-        }
-
+        padding: 0px;
+        color: $color-grey-light-1;
       }
-
-    } /* &--redes */
-
-  } /* &__info */
-
-  &__credits {
-    margin-top: 3rem;
-    color: $snow;
+      li {
+        text-align: center;
+        @mixin atMedium {
+          text-align: center;
+        }
+        margin-bottom: 1.5rem;
+        list-style: none;
+        font-size: 1.4rem;
+      }
+      a:link,
+      a:visited {
+        font-size: 1.3rem;
+        color: $color-grey-light-1;
+        font-weight: 300;
+        transition: color 0.2s;
+      }
+      a:hover,
+      a:focus {
+        color: $color-grey-light-4;
+      }
+    }
   }
 
+  &__bottom {
+    background-color: color($color-sea-blue lightness(15%));
+    padding: 4rem 0px;
+    width: 100%;
+    .wrapper {
+      @mixin clearfix;
+    }
+    &--nav {
+      width: 30%;
+      display: inline-block;
+      float: left;
+      padding: 0px;
+      ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 2em;
+      }
+      li {
+        display: inline-block;
+        margin: 0px;
+      }
+      a {
+        background-color: rgba(221, 221, 223, 0.5);
+        border-radius: 10px;
+        color: #F2F0E3;
+        display: inline-block;
+        height: 40px;
+        margin: 0px 2em 0px 0px;
+        text-align: center;
+        width: 40px;
+        &:hover,
+        &:focus {
+          background-color: $color-purple;
+        }
+      }
+      .icon {
+        display: inline-block;
+        fill: currentColor;
+        position: relative;
+        height: 16px;
+        top: 12px;
+        width: 16px;
+        vertical-align: top;
+      }
+      svg:not(:root) {
+        overflow: hidden;
+      }
+    }
+    &--info {
+      display: block;
+      width: 40%;
+      height: 40px;
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      p {
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+  }
 
 }

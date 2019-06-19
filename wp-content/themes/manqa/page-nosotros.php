@@ -13,15 +13,6 @@
 
 
 			<div class="wrapper wrapper--medium page-section nosotros">
-				<!-- METABOX -->
-				<?php
-					$theParent = wp_get_post_parent_id(get_the_ID());
-					if($theParent) :
-				?>
-				<div class="metabox metabox--position-up metabox--with-home-link">
-					<p><a class="metabox__blog-home-link" href="<?php echo get_permalink($theParent); ?>"><i class="fa fa-home" aria-hidden="true"></i> Volver a <?php echo get_the_title($theParent); ?></a> <span class="metabox__main"><?php the_title(); ?></span></p>
-				</div>
-				<?php endif; ?>
 
 				<!-- MAIN CONTENT -->
 				<div class="generic-content-container">
@@ -32,21 +23,14 @@
 
 			</div><!-- class="wrapper wrapper--medium page-section nosotros" -->
 
-			<div class="nosotros">
-				<div class="nosotros__infografia">
+			<?php if (get_field("page_internal_image")) : ?>
 
-					<img src="<?php echo get_theme_file_uri("./images/about/mapa-manqa-transparent.png"); ?>" alt="Mapa Manqa">
+			<div class="page-section__photo-separator-container">
+				<div class="page-section__photo-separator-image" style="background-image: url('<?php echo get_field('page_internal_image')['sizes']['pageBanner']; ?>');"></div>
+			</div>
 
-				</div>
-			</div>
-			<!-- LINEA ADORNO DE COLORES     -->
-			<div class="large-hero__bottom-line">
-					<span class="large-hero__bottom-line--col1"></span>
-					<span class="large-hero__bottom-line--col2"></span>
-					<span class="large-hero__bottom-line--col3"></span>
-					<span class="large-hero__bottom-line--col4"></span>
-					<span class="large-hero__bottom-line--col5"></span>
-			</div>
+			<?php endif; ?>
+
 
 			<div class="nosotros">
 				<div class="wrapper wrapper-medium nosotros__aliados">
@@ -56,9 +40,19 @@
 						<p>La sostenibilidad social y económica de Manq’a se basa en la vinculación con organizaciones de productores, restaurantes, juntas de vecinos, ministerios, ONGs, redes, sector público y privado y donantes.
 						</p>
 						<p>Gracias al apoyo de nuestros aliados Manq’a es un modelo que ha logrado capacitar a la fecha a más de 3155 jóvenes.</p>
-
-						<h3>Nuestros Aliados:</h3>
 					</div><!-- nosotros__aliados--text -->
+
+					<div class="nosotros__aliados--text">
+						<h4>Manq'a es un programa de:</h4>
+						<ul class="nosotros__aliados--ul">
+							<li class=" nosotros__aliados--li nosotros__aliados--li-u">
+									<img src="<?php echo get_theme_file_uri('/images/aliados/icco-logo.png'); ?>" alt="Icco Cooperación">
+							</li>
+							<li class="nosotros__aliados--li nosotros__aliados--li-u">
+								<img src="<?php echo get_theme_file_uri('/images/aliados/melting-pot-logo.png'); ?>" alt="Melting Pot Bolivia" width=200>
+							</li>
+						</ul>
+					</div>
 
 					<ul class="nosotros__aliados--ul">
 						<li class="nosotros__aliados--li">
@@ -93,17 +87,6 @@
 						</li>
 					</ul>
 
-					<div class="nosotros__aliados--text">
-					<h4>Manq'a es un programa de:</h4>
-					<ul class="nosotros__aliados--ul">
-						<li class=" nosotros__aliados--li nosotros__aliados--li-u">
-								<img src="<?php echo get_theme_file_uri('/images/aliados/icco-logo.png'); ?>" alt="Icco Cooperación">
-						</li>
-						<li class="nosotros__aliados--li nosotros__aliados--li-u">
-							<img src="<?php echo get_theme_file_uri('/images/aliados/melting-pot-logo.png'); ?>" alt="Melting Pot Bolivia" width=200>
-						</li>
-					</ul>
-				</div>
 			</div>
 
 		</main><!-- #main -->

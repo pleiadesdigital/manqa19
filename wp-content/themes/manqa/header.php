@@ -54,11 +54,12 @@
 							<li <?php if (is_page("servicios")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/servicios'); ?>">Servicios <i class="fa fa-sort-desc"></i></a>
 								<ul class="site-header__main-navigation--submenu">
 									<li <?php if (is_page("catering")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/catering'); ?>">Catering</a></li>
-									<li <?php if (is_page("restaurant")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/restaurant'); ?>">Restaurant</a></li>
-									<li <?php if (is_page("turismo")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/turismo'); ?>">Turismo</a></li>
+									<li <?php if (is_page("restaurante")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/restaurant'); ?>">Restaurante</a></li>
+									<li <?php if (is_page("turismo-gastronomico")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/turismo'); ?>">Turismo</a></li>
 								</ul>
 							</li>
 							<li <?php if (is_page("eventos")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/eventos'); ?>">Eventos</a></li>
+							<li <?php if (is_home()) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/noticias'); ?>">Noticias</a></li>
 							<li <?php if (is_page("contacto")) { echo 'class="current-page"'; } ?>><a href="<?php echo site_url('/contacto'); ?>">Contacto</a></li>
 						</ul>
 					</nav><!-- #site-navigation .site-header -->
