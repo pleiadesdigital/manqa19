@@ -28,7 +28,7 @@
 						<?php the_content(); ?>
 						<?php if (!$theParent) : ?>
 						<div class="landing_cpt">
-							<p>Elige un servicio para obtener más información:</p>
+							<p class="text-center">Elige un servicio para obtener más información:</p>
 							<a href="<?php echo site_url("restaurante"); ?>" class="btn btn--large btn--gradient-grey">RESTAURANTE</a>
 							<a href="<?php echo site_url("catering"); ?>" class="btn btn--large btn--gradient-pink">CATERING</a>
 							<a href="<?php echo site_url("turismo-gastronomico"); ?>" class="btn btn--large btn--gradient-green-bol">TURISMO GASTRONÓMICO</a>

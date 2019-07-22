@@ -46,9 +46,12 @@
 
 .page-id-59 {
 
-  .site-header {
-    background-color: $white;
+  @mixin atMedium {
+    .site-header {
+      background-color: $white;
+    }
   }
+
 
   background-color: $color-grey;
   .servicios {

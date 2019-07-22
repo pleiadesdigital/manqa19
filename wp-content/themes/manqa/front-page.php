@@ -28,20 +28,14 @@
         <!-- MAIN PROJECTS -->
 		<div class="projects__cards generic-content-container">
 
-			<div class="projects__card">
-				<div class="projects__card--square1"></div>
+      <div class="projects__card">
+        <div class="projects__card--square1"></div>
 				<figure>
-					<img src="<?php echo get_theme_file_uri('images/about/services1.jpg'); ?>" alt="Proyecto 1">
+					<img src="<?php echo get_theme_file_uri('images/about/services1.jpg'); ?>" alt="Proyecto 2">
 					<figcaption class="figcaption figcaption--1">
-						<div class="figcaption--1-top">
-							<h3><a href="<?php echo site_url("/escuelas-bolivia"); ?>">Bolivia</a></h3>
-							<!-- <a href="#" class="btn btn--small btn--gradient-orange">Leer más</a> -->
-						</div>
-						<div class="figcaption--1-middle"></div>
-						<div class="figcaption--1-bottom">
-							<h3><a href="<?php echo site_url("/escuelas-colombia"); ?>">Colombia</a></h3>
-							<!-- <a href="#" class="btn btn--small btn--gradient-orange">Leer más</a> -->
-						</div>
+						<h2>Escuelas</h2>
+						<p>Visita nuestras escuelas en Bolivia y Colombia</p>
+						<a href="<?php echo site_url("/escuelas"); ?>" class="btn btn--small btn--gradient-orange btn--delay">Leer más</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -51,7 +45,7 @@
 					<img src="<?php echo get_theme_file_uri('images/about/services2.jpg'); ?>" alt="Proyecto 2">
 					<figcaption class="figcaption figcaption--2">
 						<h2>Modelos</h2>
-						<p>Modelo Educativo <br> Modelo de Inserción Laboral <br> Modelo de Emprendimientos <br> Modelo de Mentoría</p>
+						<p>Educativo <br>Inserción Laboral <br>Emprendimientos <br>Mentoría</p>
 						<a href="<?php echo site_url("/modelos"); ?>" class="btn btn--small btn--gradient-purple btn--delay">Leer más</a>
 					</figcaption>
 				</figure>
@@ -98,24 +92,24 @@
 
             <div class="stats__card stats__card--1">
 							<h2>3155</h2>
-							<p>JÓVENES GRADUADOS</p>
+							<p class="text-center">JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--2">
 							<h2>3155</h2>
-							<p>JÓVENES GRADUADOS</p>
+							<p class="text-center">JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--3">
 							<h2>3155</h2>
-							<p>JÓVENES GRADUADOS</p>
+							<p class="text-center">JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--4">
 							<h2>3155</h2>
-							<p>JÓVENES GRADUADOS</p>
+							<p class="text-center">JÓVENES GRADUADOS</p>
             </div>
             <div class="stats__card stats__card--5">
 							<div class="stats__card--square2"></div>
 							<h2>3155</h2>
-							<p>JÓVENES GRADUADOS</p>
+							<p class="text-center">JÓVENES GRADUADOS</p>
             </div>
         </div>
     </div> <!-- wrapper -->

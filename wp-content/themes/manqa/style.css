@@ -469,6 +469,10 @@ img {
   margin-top: 6rem;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 /* .hexagon {
   position: relative;
   width: 300px;
@@ -568,112 +572,128 @@ img {
 
 .btn--gradient-blue:link,
   .btn--gradient-blue:visited {
-    background-image: linear-gradient(to right, rgb(32, 55, 87), rgb(69, 118, 186));
+    /* background-image: linear-gradient(to right, $color-dark-blue, color($color-dark-blue l(50%))); */
+    background-color: rgb(0, 54, 122);
     color: #F8F8F8;
     transition: all 1s;
   }
 
 .btn--gradient-blue:hover,
   .btn--gradient-blue:focus {
-    background-image: linear-gradient(to left, rgb(32, 55, 87), rgb(69, 118, 186));
+    /* background-image: linear-gradient(to left, $color-dark-blue, color($color-dark-blue l(50%))); */
+    background-color: rgb(0, 44, 97);
   }
 
 /* ORANGE */
 
 .btn--gradient-orange:link,
   .btn--gradient-orange:visited {
-    background-image: linear-gradient(to right, rgb(229, 74, 36), rgb(137, 40, 16));
+    /* background-image: linear-gradient(to right, $color-orange, color($color-orange l(30%))); */
+    background-color: rgb(229, 74, 36);
     color: #F8F8F8;
     transition: all 1s;
   }
 
 .btn--gradient-orange:hover,
   .btn--gradient-orange:focus {
-    background-image: linear-gradient(to left, rgb(229, 74, 36), rgb(137, 40, 16));
+    /* background-image: linear-gradient(to left, $color-orange, color($color-orange l(30%))); */
+    background-color: rgb(215, 63, 25);
   }
 
 /* PURPLE */
 
 .btn--gradient-purple:link,
   .btn--gradient-purple:visited {
-    background-image: linear-gradient(to right, rgb(149, 54, 123), rgb(112, 41, 93));
+    /* background-image: linear-gradient(to right, $color-purple, color($color-purple l(30%))); */
+    background-color: rgb(149, 54, 123);
     color: #F8F8F8;
     transition: all 1s;
   }
 
 .btn--gradient-purple:hover,
   .btn--gradient-purple:focus {
-    background-image: linear-gradient(to left, rgb(149, 54, 123), rgb(112, 41, 93));
+    /* background-image: linear-gradient(to left, $color-purple, color($color-purple l(30%))); */
+    background-color: rgb(131, 47, 109);
   }
 
 /* GREEN */
 
 .btn--gradient-green:link,
   .btn--gradient-green:visited {
-    background-image: linear-gradient(to right, rgb(115, 178, 31), rgb(56, 87, 15));
+    /* background-image: linear-gradient(to right, $color-green, color($color-green l(20%))); */
+    background-color: rgb(115, 178, 31);
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
 
 .btn--gradient-green:hover,
   .btn--gradient-green:focus {
-    background-image: linear-gradient(to left, rgb(115, 178, 31), rgb(56, 87, 15));
+    /* background-image: linear-gradient(to left, $color-green, color($color-green l(20%))); */
+     background-color: rgb(100, 156, 28);
   }
 
 /* GREEN BOLIVIA */
 
 .btn--gradient-green-bol:link,
   .btn--gradient-green-bol:visited {
-    background-image: linear-gradient(to right, rgb(65, 173, 73), rgb(42, 111, 47));
+    /* background-image: linear-gradient(to right, $color-green-bol, color($color-green-bol l(30%))); */
+    background-color: rgb(65, 173, 73);
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
 
 .btn--gradient-green-bol:hover,
   .btn--gradient-green-bol:focus {
-    background-image: linear-gradient(to left, rgb(65, 173, 73), rgb(42, 111, 47));
+    /* background-image: linear-gradient(to left, $color-green-bol, color($color-green-bol l(30%))); */
+    background-color: rgb(52, 137, 58);
   }
 
 /* YELLOW COLOMBIA */
 
 .btn--gradient-yellow-col:link,
   .btn--gradient-yellow-col:visited {
-    background-image: linear-gradient(to right, rgb(253, 181, 21), rgb(151, 104, 2));
+    /* background-image: linear-gradient(to right, $color-yellow-col, color($color-yellow-col l(30%))); */
+    background-color: rgb(253, 181, 21);
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
 
 .btn--gradient-yellow-col:hover,
   .btn--gradient-yellow-col:focus {
-    background-image: linear-gradient(to left, rgb(253, 181, 21), rgb(151, 104, 2));
+    /* background-image: linear-gradient(to left, $color-yellow-col, color($color-yellow-col l(30%))); */
+    background-color: rgb(222, 153, 2);
   }
 
 /* GREY BTN */
 
 .btn--gradient-grey:link,
   .btn--gradient-grey:visited {
-    background-image: linear-gradient(to right, rgb(86, 87, 89), rgb(75, 76, 78));
+    /* background-image: linear-gradient(to right, $color-grey-btn, color($color-grey-btn l(30%))); */
+    background-color: rgb(86, 87, 89);
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
 
 .btn--gradient-grey:hover,
   .btn--gradient-grey:focus {
-    background-image: linear-gradient(to left, rgb(86, 87, 89), rgb(75, 76, 78));
+    /* background-image: linear-gradient(to left, $color-grey-btn, color($color-grey-btn l(30%))); */
+    background-color: rgb(60, 61, 62);
   }
 
 /* PINK BTN */
 
 .btn--gradient-pink:link,
   .btn--gradient-pink:visited {
-    background-image: linear-gradient(to right, rgb(237, 19, 93), rgb(142, 11, 55));
+    /* background-image: linear-gradient(to right, $color-pink-btn, color($color-pink-btn l(30%))); */
+    background-color: rgb(237, 19, 93);
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
 
 .btn--gradient-pink:hover,
   .btn--gradient-pink:focus {
-    background-image: linear-gradient(to left, rgb(237, 19, 93), rgb(142, 11, 55));
+    /* background-image: linear-gradient(to left, $color-pink-btn, color($color-pink-btn l(30%))); */
+    background-color: rgb(190, 14, 73);
   }
 
 .btn--transparent:link,
@@ -1306,11 +1326,8 @@ img {
       width: 24px;
       height: 2px;
       background-color: #FFFFFF;
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-      transition: -webkit-transform 0.3s ease-out;
+      transform-origin: top left;
       transition: transform 0.3s ease-out;
-      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     }
 
 .site-header__menu-icon__middle {
@@ -1321,8 +1338,7 @@ img {
       width: 24px;
       height: 2px;
       background-color: #FFFFFF;
-      -webkit-transform-origin: 0 50%;
-              transform-origin: 0 50%;
+      transform-origin: 0 50%;
       transition: all 0.3s ease-out;
     }
 
@@ -1334,11 +1350,8 @@ img {
       width: 24px;
       height: 2px;
       background-color: #FFFFFF;
-      transition: -webkit-transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
-      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-      -webkit-transform-origin: bottom left;
-              transform-origin: bottom left;
+      transform-origin: bottom left;
     }
 
 @media (min-width: 800px) {
@@ -1350,20 +1363,17 @@ img {
   }
 
 .site-header__menu-icon--close-x::before {
-      -webkit-transform: rotate(45deg) scaleX(1.2);
-              transform: rotate(45deg) scaleX(1.2);
+      transform: rotate(45deg) scaleX(1.2);
       background-color: #FFFFFF;
     }
 
 .site-header__menu-icon--close-x .site-header__menu-icon__middle {
       opacity: 0;
-      -webkit-transform: scaleX(0);
-              transform: scaleX(0);
+      transform: scaleX(0);
     }
 
 .site-header__menu-icon--close-x::after {
-      -webkit-transform: rotate(-45deg) scaleX(1.2) translateY(2px) translateX(-2px);
-              transform: rotate(-45deg) scaleX(1.2) translateY(2px) translateX(-2px);
+      transform: rotate(-45deg) scaleX(1.2) translateY(2px) translateX(-2px);
       background-color: #FFFFFF;
     }
 
@@ -1598,8 +1608,7 @@ img {
 .metabox--position-up {
     position: absolute;
     top: 0px;
-    -webkit-transform: translate(5%, 50%);
-            transform: translate(5%, 50%);
+    transform: translate(5%, 50%);
   }
 
 .metabox--with-home-link {
@@ -1915,6 +1924,7 @@ div.wpcf7 {
 
 .escuelas__main-content p {
       margin-bottom: 1.5rem;
+      text-align: justify;
     }
 
 .escuelas__main-content ul, .escuelas__main-content ol {
@@ -2099,47 +2109,34 @@ div.wpcf7 {
     }
 
 .projects__card figure .figcaption--1 {
-        background-color: rgba(229, 74, 36, 0.5);
         -webkit-filter: brightness(100%);
                 filter: brightness(100%);
         border-radius: 20px;
       }
 
-.projects__card figure .figcaption--1-top {
-          -webkit-transform: translateY(-200px);
-                  transform: translateY(-200px);
-          transition: all 0.3s ease-in-out;
-        }
-
-.projects__card figure .figcaption--1-middle {
-          height: 5px;
-          width: 200px;
-          content: " ";
-          border-bottom: 3px solid #FFFFFF;
-          -webkit-transform: translateX(-230px);
-                  transform: translateX(-230px);
-          transition: all 0.3s ease-in-out;
-        }
-
-.projects__card figure .figcaption--1-bottom {
-          -webkit-transform: translateY(200px);
-                  transform: translateY(200px);
-           transition: all 0.3s ease-in-out;
+.projects__card figure .figcaption--1:hover {
+          background-color: rgba(229, 74, 36, 0.6);
         }
 
 .projects__card figure .figcaption--2 {
-        background-color: rgba(150, 87, 153, 0.5);
         -webkit-filter: brightness(100%);
                 filter: brightness(100%);
         border-radius: 20px;
       }
 
+.projects__card figure .figcaption--2:hover {
+          background-color: rgba(150, 87, 153, 0.6);
+        }
+
 .projects__card figure .figcaption--3 {
-        background-color: rgba(115, 178, 31, 0.5);
         -webkit-filter: brightness(100%);
                 filter: brightness(100%);
         border-radius: 20px;
       }
+
+.projects__card figure .figcaption--3:hover {
+          background-color: rgba(115, 178, 31, 0.6);
+        }
 
 .projects__card figure .figcaption h2 {
         text-transform: uppercase;
@@ -2149,8 +2146,7 @@ div.wpcf7 {
         color: #FFFFFF;
         font-size: 2.6rem;
         line-height: 1.2;
-        -webkit-transform: translateY(-200px);
-                transform: translateY(-200px);
+        transform: translateY(-200px);
         transition: all 0.4s ease-out;
         transition-delay: 0.2s;
       }
@@ -2170,8 +2166,7 @@ div.wpcf7 {
         font-weight: 400;
         font-size: 1.4rem;
         line-height: 1.3;
-        -webkit-transform: translateX(-500px);
-                transform: translateX(-500px);
+        transform: translateX(-500px);
         transition: all 0.2s ease-out;
         transition-delay: 0.2s;
       }
@@ -2187,8 +2182,7 @@ div.wpcf7 {
 .projects__card figure .figcaption .btn--delay {
         margin-top: 2rem;
         color: #FFFFFF;
-        -webkit-transform: translateY(200px);
-                transform: translateY(200px);
+        transform: translateY(200px);
         transition: all 0.3s ease-out;
         transition-delay: 0.6s;
       }
@@ -2198,35 +2192,29 @@ div.wpcf7 {
     }
 
 .projects__card figure:hover .figcaption--1-top {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+      transform: translateY(0px);
     }
 
 .projects__card figure:hover .figcaption--1-middle {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
+      transform: translateX(0px);
     }
 
 .projects__card figure:hover .figcaption--1-bottom {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+      transform: translateY(0px);
     }
 
 .projects__card figure:hover h2 {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+      transform: translateY(0px);
       transition-delay: 0.2s;
     }
 
 .projects__card figure:hover p {
-      -webkit-transform: translateX(0px);
-              transform: translateX(0px);
+      transform: translateX(0px);
       transition-delay: 0.3s;
     }
 
 .projects__card figure:hover .btn--delay {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
+      transform: translateY(0px);
       transition-delay: 0s;
     }
 
@@ -2291,11 +2279,14 @@ div.wpcf7 {
 
 .page-id-59 {
 
+
   background-color: rgb(77, 77, 79);
 }
 
-.page-id-59 .site-header {
-    background-color: #FFFFFF;
+@media (min-width: 800px) {
+    .page-id-59 .site-header {
+      background-color: #FFFFFF;
+    }
   }
 
 .page-id-59 .servicios {
@@ -2759,7 +2750,7 @@ div.wpcf7 {
 .nosotros__aliados--text {
       max-width: 700px;
       display: block;
-      margin: 0px auto 4rem;
+      margin: 0px auto 2rem;
 
 
 
@@ -2786,10 +2777,10 @@ div.wpcf7 {
       }
 
 .nosotros__aliados--text h4 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 400;
         margin-top: 3rem;
-        text-align: center;
+        text-align: left;
       }
 
 .nosotros__aliados--ul {

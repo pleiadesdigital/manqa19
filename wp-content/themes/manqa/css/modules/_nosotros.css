@@ -41,12 +41,10 @@
   /* ALIADOS */
   &__aliados {
 
-
-
     &--text {
       max-width: 700px;
       display: block;
-      margin: 0px auto 4rem;
+      margin: 0px auto 2rem;
 
       h2 {
         text-align: left;
@@ -65,10 +63,10 @@
         margin-top: 2rem;
       }
       h4 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 400;
         margin-top: 3rem;
-        text-align: center;
+        text-align: left;
       }
 
 
@@ -106,9 +104,6 @@
     &--li-u {
       width: 33%;
     }
-
-
-
   }
 
 

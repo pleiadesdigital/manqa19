@@ -90,37 +90,27 @@
       overflow: hidden;
 
       &--1 {
-        background-color: rgba(229, 74, 36, 0.5);
         filter: brightness(100%);
         border-radius: 20px;
-        &-top {
-          transform: translateY(-200px);
-          transition: all 0.3s ease-in-out;
-        }
-        &-middle {
-          height: 5px;
-          width: 200px;
-          content: " ";
-          border-bottom: 3px solid #FFFFFF;
-          transform: translateX(-230px);
-          transition: all 0.3s ease-in-out;
-        }
-        &-bottom {
-          transform: translateY(200px);
-           transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: rgba(229, 74, 36, 0.6);
         }
       }
 
       &--2 {
-        background-color: rgba(150, 87, 153, 0.5);
         filter: brightness(100%);
         border-radius: 20px;
+        &:hover {
+          background-color: rgba(150, 87, 153, 0.6);
+        }
       }
 
       &--3 {
-        background-color: rgba(115, 178, 31, 0.5);
         filter: brightness(100%);
         border-radius: 20px;
+        &:hover {
+          background-color: rgba(115, 178, 31, 0.6);
+        }
       }
 
       h2 {

@@ -45,97 +45,113 @@
   /* BLUE */
   &--gradient-blue:link,
   &--gradient-blue:visited {
-    background-image: linear-gradient(to right, $color-dark-blue, color($color-dark-blue l(50%)));
+    /* background-image: linear-gradient(to right, $color-dark-blue, color($color-dark-blue l(50%))); */
+    background-color: $color-blue;
     color: #F8F8F8;
     transition: all 1s;
   }
   &--gradient-blue:hover,
   &--gradient-blue:focus {
-    background-image: linear-gradient(to left, $color-dark-blue, color($color-dark-blue l(50%)));
+    /* background-image: linear-gradient(to left, $color-dark-blue, color($color-dark-blue l(50%))); */
+    background-color: color($color-blue l(-5%));
   }
 
   /* ORANGE */
   &--gradient-orange:link,
   &--gradient-orange:visited {
-    background-image: linear-gradient(to right, $color-orange, color($color-orange l(30%)));
+    /* background-image: linear-gradient(to right, $color-orange, color($color-orange l(30%))); */
+    background-color: $color-orange;
     color: #F8F8F8;
     transition: all 1s;
   }
   &--gradient-orange:hover,
   &--gradient-orange:focus {
-    background-image: linear-gradient(to left, $color-orange, color($color-orange l(30%)));
+    /* background-image: linear-gradient(to left, $color-orange, color($color-orange l(30%))); */
+    background-color: color($color-orange l(-5%));
   }
 
   /* PURPLE */
   &--gradient-purple:link,
   &--gradient-purple:visited {
-    background-image: linear-gradient(to right, $color-purple, color($color-purple l(30%)));
+    /* background-image: linear-gradient(to right, $color-purple, color($color-purple l(30%))); */
+    background-color: $color-purple;
     color: #F8F8F8;
     transition: all 1s;
   }
   &--gradient-purple:hover,
   &--gradient-purple:focus {
-    background-image: linear-gradient(to left, $color-purple, color($color-purple l(30%)));
+    /* background-image: linear-gradient(to left, $color-purple, color($color-purple l(30%))); */
+    background-color: color($color-purple l(-5%));
   }
 
   /* GREEN */
   &--gradient-green:link,
   &--gradient-green:visited {
-    background-image: linear-gradient(to right, $color-green, color($color-green l(20%)));
+    /* background-image: linear-gradient(to right, $color-green, color($color-green l(20%))); */
+    background-color: $color-green;
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
   &--gradient-green:hover,
   &--gradient-green:focus {
-    background-image: linear-gradient(to left, $color-green, color($color-green l(20%)));
+    /* background-image: linear-gradient(to left, $color-green, color($color-green l(20%))); */
+     background-color: color($color-green l(-5%));
   }
 
   /* GREEN BOLIVIA */
   &--gradient-green-bol:link,
   &--gradient-green-bol:visited {
-    background-image: linear-gradient(to right, $color-green-bol, color($color-green-bol l(30%)));
+    /* background-image: linear-gradient(to right, $color-green-bol, color($color-green-bol l(30%))); */
+    background-color: $color-green-bol;
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
   &--gradient-green-bol:hover,
   &--gradient-green-bol:focus {
-    background-image: linear-gradient(to left, $color-green-bol, color($color-green-bol l(30%)));
+    /* background-image: linear-gradient(to left, $color-green-bol, color($color-green-bol l(30%))); */
+    background-color: color($color-green-bol l(-10%));
   }
 
   /* YELLOW COLOMBIA */
   &--gradient-yellow-col:link,
   &--gradient-yellow-col:visited {
-    background-image: linear-gradient(to right, $color-yellow-col, color($color-yellow-col l(30%)));
+    /* background-image: linear-gradient(to right, $color-yellow-col, color($color-yellow-col l(30%))); */
+    background-color: $color-yellow-col;
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
   &--gradient-yellow-col:hover,
   &--gradient-yellow-col:focus {
-    background-image: linear-gradient(to left, $color-yellow-col, color($color-yellow-col l(30%)));
+    /* background-image: linear-gradient(to left, $color-yellow-col, color($color-yellow-col l(30%))); */
+    background-color: color($color-yellow-col l(-10%));
   }
 
   /* GREY BTN */
   &--gradient-grey:link,
   &--gradient-grey:visited {
-    background-image: linear-gradient(to right, $color-grey-btn, color($color-grey-btn l(30%)));
+    /* background-image: linear-gradient(to right, $color-grey-btn, color($color-grey-btn l(30%))); */
+    background-color: $color-grey-btn;
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
   &--gradient-grey:hover,
   &--gradient-grey:focus {
-    background-image: linear-gradient(to left, $color-grey-btn, color($color-grey-btn l(30%)));
+    /* background-image: linear-gradient(to left, $color-grey-btn, color($color-grey-btn l(30%))); */
+    background-color: color($color-grey-btn l(-10%));
   }
 
   /* PINK BTN */
   &--gradient-pink:link,
   &--gradient-pink:visited {
-    background-image: linear-gradient(to right, $color-pink-btn, color($color-pink-btn l(30%)));
+    /* background-image: linear-gradient(to right, $color-pink-btn, color($color-pink-btn l(30%))); */
+    background-color: $color-pink-btn;
     color: #F8F8F8;
-    transition: all 1s;
+    transition: all 0.2s;
   }
   &--gradient-pink:hover,
   &--gradient-pink:focus {
-    background-image: linear-gradient(to left, $color-pink-btn, color($color-pink-btn l(30%)));
+    /* background-image: linear-gradient(to left, $color-pink-btn, color($color-pink-btn l(30%))); */
+    background-color: color($color-pink-btn l(-10%));
   }
 
 

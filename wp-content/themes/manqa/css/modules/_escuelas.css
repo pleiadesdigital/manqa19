@@ -19,6 +19,7 @@
     }
     p {
       margin-bottom: 1.5rem;
+      text-align: justify;
     }
     ul, ol {
       margin: 0px 0px;

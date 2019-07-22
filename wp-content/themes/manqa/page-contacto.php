@@ -27,6 +27,6 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php endwhile;	?>
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

@@ -33,8 +33,8 @@
 						<?php if (!$theParent) : ?>
 
 						<div class="landing_cpt">
-							<p>Elige un país para obtener información sobre nuestras escuelas:</p>
-							<a href="<?php echo site_url('escuelas-bolivia'); ?>" class="btn btn--gradient-green-bol">BOLIVIA</a>
+							<p class="text-center">Elige un país para obtener información sobre nuestras escuelas:</p>
+							<a href="<?php echo site_url('escuelas-bolivia'); ?>" class="btn btn--large btn--gradient-green-bol">BOLIVIA</a>
 							<a href="<?php echo site_url('escuelas-colombia'); ?>" class="btn btn--large btn--gradient-yellow-col">COLOMBIA</a>
 						</div> <!-- class="landing_cpt" -->
 
@@ -60,10 +60,6 @@
 					<?php echo get_field("second_content"); ?>
 				</div>
 			</div>
-
-
-
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -3,7 +3,7 @@
 
 <!-- PAGE BANNER -->
 	<?php pageBanner(array(
-		// 'photo'				=> get_the_post_thumbnail($post_id, 'pageBanner', array('class' => 'singlePageBanner'))
+		'photo'				=> get_the_post_thumbnail_url($post_id, 'pageBanner', array('class' => 'singlePageBanner'))
 	)); ?>
 
 	<div id="primary" class="content-area">
@@ -12,7 +12,7 @@
 
 				<!-- METABOX -->
 				<?php
-					//$theParent = wp_get_post_parent_id(get_the_ID());
+					$theParent = wp_get_post_parent_id(get_the_ID());
 					if(is_single()) :
 				?>
 				<div class="metabox metabox--single-post metabox--with-home-link">

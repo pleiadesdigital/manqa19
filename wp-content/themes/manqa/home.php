@@ -4,7 +4,7 @@
 <!-- PAGE BANNER -->
 	<?php pageBanner(array(
 		'photo'				=> get_theme_file_uri('images/banners/banner-noticias.jpg'),
-		'title'				=> 'Blog de noticias'
+		'title'				=> 'Noticias'
 	)); ?>
 
 	<div id="primary" class="content-area">

@@ -52,9 +52,11 @@
 								<img src="<?php echo get_theme_file_uri('/images/aliados/melting-pot-logo.png'); ?>" alt="Melting Pot Bolivia" width=200>
 							</li>
 						</ul>
+						<h4>Con el apoyo de:</h4>
 					</div>
 
 					<ul class="nosotros__aliados--ul">
+
 						<li class="nosotros__aliados--li">
 								<img src="<?php echo get_theme_file_uri('/images/aliados/loteria-logo.png'); ?>" alt="Nationale Postcode Loterij">
 						</li>
